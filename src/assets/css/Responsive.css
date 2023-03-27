@@ -1,0 +1,198 @@
+/* ************Top-header Responsive Css Start************ */
+
+@media screen and (min-width: 320px) and (max-width: 770px) {
+  .nav_link a {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+
+  .vrtcl_line::after {
+    margin-left: 10px;
+  }
+  .top-header-left a span {
+    font-size: 12px;
+    margin: 12px 8px 12px 4px;
+  }
+  .top-header-right-social-icons {
+    justify-content: center;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 472px) {
+  .top-header-left {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* ************Top-header Responsive Css End************ */
+
+/* ************Banner Responsive Css Start************ */
+@media screen and (min-width: 320px) and (max-width: 770px) {
+  .bg_img_content h1 {
+    font-size: 38px;
+  }
+
+  .bg_img_content p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .bg_img_conent_btns .btn1 {
+    font-size: 10px;
+    margin: 5px;
+    padding: 0 25px;
+    line-height: 37px;
+  }
+
+  .bg_img_conent_btns .btn2 {
+    font-size: 10px;
+    margin: 5px;
+    padding: 0 25px;
+    line-height: 37px;
+  }
+}
+
+/* ************Banner Responsive Css End************ */
+
+/* ************TextComponent Responsive Css Start************ */
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .text_cmpnt_content h5 {
+    min-height: 48px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .text_cmpnt_content {
+    text-align: center;
+  }
+  .text_cmpnt_content p{
+    margin: 0px 0px 20px 0px;
+  }
+  .text_cmpnt_content a{
+    margin-bottom: 25px;  
+  }
+  .text_cmpnt_content h5 {
+    min-height: 30px;
+}
+}
+
+/* ************TextComponent Responsive Css End************ */
+
+/* ************Seller Responsive Css Start************ */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .seller_cards{
+    margin-top: 30px;
+    padding: 0px 30px;
+  }
+  .card-img-top{
+    height: 250px;
+  }
+  .seller_top_heading h3{
+    font-size: 20px;
+  }
+}
+
+/* ************Seller Responsive Css End************ */
+
+
+
+/* ************Carousel Responsive Css Start************ */
+@media screen and (min-width: 320px) and (max-width: 770px) {
+  .carousel_content h1 {
+    line-height: 30px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .carousel_content h1{
+    text-align: center;
+  }
+  .carousel-control-prev-icon{
+    opacity: 0;
+  }
+  .carousel-control-next-icon{
+    opacity: 0;
+  }
+}
+/* ************Carousel Responsive Css End************ */
+
+
+/* ************Storie Responsive Css Start************ */
+@media screen and (min-width: 320px) and (max-width: 786px) {
+  .storie_cards{
+    padding: 30px 0px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .storie_cards{
+    padding: 30px 25px;
+    }
+}
+
+/* ************Storie Responsive Css End************ */
+/* ************Footer Responsive Css Start************ */
+
+@media screen and (min-width: 320px) and (max-width: 1250px) {
+  .footer_bg {
+    padding: 50px 40px 30px 60px;
+  }
+
+  .footer_social_icons a {
+    padding: 0px 15px 15px 0px;
+    font-size: 25px;
+  }
+  .footer_date {
+    font-size: 12px;
+  }
+
+  .footer_heading {
+    font-size: 16px;
+  }
+  .footer_para_link {
+    font-size: 13px;
+  }
+
+  .footer_content ul li a img {
+    width: 50px;
+  }
+}
+
+/* ************Footer Responsive Css End************ */
+
+/* ************Trending Responsive Css Start************ */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .media-heading{
+    font-size: 12px;
+    text-align: start;
+  }
+  .media-object{
+    width: 50px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .trending_content_div{
+    padding: 30px 30px;
+  }
+}
+
+/* ************Trending Responsive Css End************ */
+
+
+/* ************ShippingBar Responsive Css Start************ */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .shipping_banner_heading {
+    font-size: 23px;
+    padding-bottom: 20px;
+}
+  .shipping_banner_link_div a {
+    margin: 0px 50px 0px 50px;
+}
+}
+
+/* ************ShippingBar Responsive Css End************ */
+
+

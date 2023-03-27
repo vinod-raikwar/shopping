@@ -1,0 +1,45 @@
+.login_bg_img{
+    background-image: url(../../assets/images/login_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+.login_bg_img h1{
+    text-align: center;
+    font-size: 78px;
+    font-weight: 600;
+}
+.form_control{
+    padding: 0.9rem 0.75rem !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+::placeholder{
+    font-size: 14px !important;
+}
+
+.contact_div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.form-label{
+    text-align: start;
+}
+.font_size{
+    font-size: 20px;
+}
+.heading{
+    letter-spacing: 0.5px;
+    text-align: start;
+    padding-bottom: 20px;
+}
+.accont_btn{
+   margin-left: 20px;
+   border: 1px solid gray;
+}
