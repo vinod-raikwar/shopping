@@ -1,78 +1,181 @@
+.pagination {
+  text-align: center;
+  justify-content: space-around;
+  --bs-pagination-active-bg: #b7472a !important;
+  --bs-pagination-color: #b7472a !important;
+  --bs-pagination-hover-color: #b7472a !important;
+  --bs-pagination-active-border-color: #b7472a !important;
+}
 
-/* ************Product Page Css Start*********** */
-.product_slider_content {
-    transform: translateY(-62%);
-    text-align: start;
-  }
-  
-  .product_slider_content h1 {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 74px;
-    letter-spacing: -2px;
-    margin-bottom: 6px;
-    line-height: 83px;
-  }
-  .product_slider_content p {
-    font-family: Poppins, sans-serif;
-    font-size: 20px;
-    line-height: 29px;
-    letter-spacing: 0px;
-    color: #ffffff;
-  }
-  
-  .product_slider_link_div {
-    margin-top: 35px;
-    margin-bottom: 35px;
-  }
-  .product_slider_link1 {
-    background-color: #0cc3ce;
-    border: 1px solid #0cc3ce;
-    color: #fff;
-    font-size: 14px;
-    margin: 5px;
-    padding: 20px 35px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .product_slider_link2 {
-    color: #ffffff;
-    font-size: 14px;
-    margin: 5px;
-    padding: 20px 35px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid #ffffff;
-    font-weight: 600;
-  }
-  
-  .product_slider_link2:hover {
-    background-color: #0cc3ce;
-    border: 1px solid #0cc3ce;
-    color: #ffffff;
-  }
-  
-  .product_slider_link1:hover {
-    background-color: #000000;
-    border: 1px solid #0a0a0a;
-    color: #ffffff;
-  }
-  
-  .speed_slider {
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  
-  .product_slider img {
-    padding: 10px;
-    height: 360px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    overflow-x: hidden;
-  }
-  
-  /* ************Product Page Css End*********** */
+.border_shadow {
+  margin: 30px 10px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+/* ====================Home Collection CSS start=============== */
+
+.section-header_title h2 {
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.grow_pics {
+  transition: opacity 1s ease-in;
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+}
+.grow_pics:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease-in;
+}
+
+.hover_pics {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.hover_pics_title {
+  color: #ffffff;
+  bottom: 0;
+  margin-bottom: 15px;
+  position: absolute;
+  width: 100%;
+}
+
+.head_bg {
+  background-image: url(https://suprema.qodeinteractive.com/wp-content/uploads/2016/01/home-product-background-1.jpg?id=427) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+/* ====================Home Collection CSS End=============== */
+
+/* ====================new Arival  CSS Start=============== */
+.product {
+  overflow-x: hidden;
+}
+.arival_section_title h2 {
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.product-card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product_content {
+  text-align: center;
+  position: relative;
+  padding: 10px 0 6px;
+  line-height: 1.4;
+}
+.product_title {
+  font-family: Josefin Sans, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product_price {
+  font-size: 12.75px;
+  color: #000;
+  margin-top: 3px;
+  font-weight: 700;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+.product_price--original {
+  text-decoration: line-through;
+  margin-right: 5px;
+  color: #888;
+  font-weight: 400;
+}
+
+.product_price--savings {
+  color: #d53a86;
+  margin-left: 5px;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.arival_pic {
+  width: 100%;
+  height: 60vh;
+}
+
+.new_arival {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img {
+  position: absolute;
+  width: 100%;
+}
+
+.arival_pic:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease-in;
+  cursor: pointer;
+}
+
+.quick-product_btn {
+  font-size: 12.75px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  left: 5px;
+  z-index: 3;
+  background-color: #111;
+  color: #fff;
+  overflow: hidden;
+  padding: 8px 5px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.15s ease, transform 0.15s ease-out, background 0.3s ease;
+}
+
+.new_arival:hover .quick-product_btn {
+  opacity: 1;
+}
+
+.product_tag {
+  font-size: 12.75px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1;
+  padding: 6px 5px 6px 7px;
+  background-color: #111;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.new_arival:hover .product_tag {
+  opacity: 1;
+}
+
+/* ====================new Arival  CSS End=============== */

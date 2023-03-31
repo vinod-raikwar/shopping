@@ -5,8 +5,7 @@ import TextComponent from '../../components/TextComponent';
 import SellerCards from '../../components/SellerCards';
 import Carousels from '../../components/Carousels';
 import StorieCards from '../../components/StorieCards';
-import ShippingBar from '../../components/ShippingBar';
-import Trending from '../../components/Trending';
+// import ShippingBar from '../../components/ShippingBar';
 
 function Home() {
   return (
@@ -16,8 +15,7 @@ function Home() {
         <SellerCards />
         <Carousels/>
         <StorieCards/>
-        <ShippingBar />
-        <Trending />
+        {/* <ShippingBar /> */}
     </>
   )
 }

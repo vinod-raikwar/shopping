@@ -1,0 +1,90 @@
+/* ************Blog Page Css Start*********** */
+
+.card {
+  margin: 30px 10px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 5px 20px rgb(183, 71, 42, 0.5);
+}
+
+.blog_bg_color {
+  background-color: #f1efef;
+}
+
+.blog_bg_color h6 {
+  line-height: 80px;
+  margin: 0;
+}
+
+.blogs {
+  padding: 60px;
+  background-color: #f1efef;
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  text-align: left;
+}
+.blog_para {
+  font-size: 13px;
+  line-height: 26px;
+  color: #777;
+  font-weight: 400;
+}
+.blogs h3 {
+  font-size: 23px;
+  color: #b7472a;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: -0.5px;
+  line-height: 1.4em;
+  min-height: 64px;
+}
+
+.blogs_img {
+  background-image: url(../../assets/images/blog_img.avif);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  backface-visibility: visible;
+  position: relative;
+}
+
+.blogs_img::after{
+  position: absolute;
+  background-color: rgba(61, 61, 61, 0.7);
+  display: inline-block;
+  width: 100%;  
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.blogs_img a h3 {
+  color: #ffffff;
+}
+.quote_author {
+  color: #e0d9d9;
+}
+
+.bg {
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1148px) {
+  .blogs {
+    padding: 30px;
+  }
+  .blogs h3 {
+    font-size: 20px;
+  }
+}
+
+/* ************Blog Page Css End*********** */

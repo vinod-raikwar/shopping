@@ -6,8 +6,9 @@ import Home from './pages/home/Home.js';
 import Contact from './pages/contact/Contact.js';
 import Product from './pages/product/Product.js';
 import Services from './pages/service/Services.js';
-import About from './pages/about/About.js';
+import Blog from './pages/blog/Blog.js';
 import Login from './pages/login/Login.js';
+import About from './pages/about/About.js';
 import Footer from "./components/Footer.js";
 import "animate.css";
 function App() {
@@ -18,9 +19,10 @@ function App() {
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/services" element={<Services />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
         </Routes>

@@ -24,7 +24,7 @@ function SellerCards() {
           </Row>
 
           <Row>
-            <Col sm={3}>
+            <Col xs={12} sm={6} md={3} className="p-0">
               <div className="seller_cards">
                 <Card className="card_size border-0 border-bottom">
                   <Link to="#shoe">
@@ -45,13 +45,13 @@ function SellerCards() {
                       </Nav>
                     </Card.Text>
                     <Card.Title>Black Skater Sneaker</Card.Title>
-                    <p>$85.00</p>
+                    <p >$85.00</p>
                   </Card.Body>
                 </Card>
               </div>
             </Col>
 
-            <Col sm={3}>
+            <Col xs={12} sm={6} md={3} className="p-0">
               <div className="seller_cards">
                 <Card className="card_size border-0 border-bottom">
                   <Link to="#bag">
@@ -78,7 +78,7 @@ function SellerCards() {
               </div>
             </Col>
 
-            <Col sm={3}>
+            <Col xs={12} sm={6} md={3} className="p-0">
               <div className="seller_cards">
                 <Card className="card_size border-0 border-bottom">
                   <Link to="#sweter">
@@ -104,7 +104,7 @@ function SellerCards() {
               </div>
             </Col>
 
-            <Col sm={3}>
+            <Col xs={12} sm={6} md={3} className="p-0">
               <div className="seller_cards">
                 <Card className="card_size border-0 border-bottom">
                   <Link to="#sneaker">
@@ -132,7 +132,7 @@ function SellerCards() {
           </Row>
 
           <Row>
-            <Col sm={3}>
+            <Col xs={12} sm={6} md={3} className="p-0">
               <div className="seller_cards">
                 <Card className="card_size border-0 border-bottom">
                   <Link to="#shoe">
@@ -159,7 +159,7 @@ function SellerCards() {
               </div>
             </Col>
 
-            <Col sm={3}>
+            <Col xs={12} sm={6} md={3} className="p-0">
               <div className="seller_cards">
                 <Card className="card_size border-0 border-bottom">
                   <Link to="#bag">
@@ -186,7 +186,7 @@ function SellerCards() {
               </div>
             </Col>
 
-            <Col sm={3}>
+            <Col xs={12} sm={6} md={3} className="p-0">
               <div className="seller_cards">
                 <Card className="card_size border-0 border-bottom">
                   <Link to="#sweter">
@@ -209,11 +209,11 @@ function SellerCards() {
                     <Card.Title>Futura Jumper</Card.Title>
                     <p>$135.00</p>
                   </Card.Body>
-                </Card>
+                </Card> 
               </div>
             </Col>
 
-            <Col sm={3}>
+            <Col xs={12} sm={6} md={3} className="p-0">
               <div className="seller_cards">
                 <Card className="card_size border-0 border-bottom">
                   <Link to="#sneaker">

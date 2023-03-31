@@ -3,7 +3,8 @@
 
 @font-face {
   font-family: "Poppins";
-  src: local("Poppins"), url(../../assets/font/Poppins-Regular.ttf) format("truetype");
+  src: local("Poppins"),
+    url(../../assets/font/Poppins-Regular.ttf) format("truetype");
 }
 
 h6 {
@@ -46,7 +47,6 @@ h1 {
   font-weight: 600;
   letter-spacing: -1px;
   text-transform: Capitalize;
-  /* text-align: center; */
 }
 
 .nav_brand {
@@ -92,7 +92,7 @@ p {
 }
 
 .top-header-left a:hover {
-  color: #0cc3ce;
+  color: #b7472a;
 }
 
 .vrtcl_line {
@@ -145,7 +145,7 @@ End******** */
 .nav_anchor a::after {
   content: "";
   position: absolute;
-  background-color: #0cc3ce;
+  background-color: #b7472a;
   height: 3px;
   width: 0%;
   left: 0;
@@ -153,7 +153,7 @@ End******** */
   transition: 0.3s;
 }
 .nav_anchor a:hover::after {
-  color: #0cc3ce;
+  color: #b7472a;
   width: 100%;
 }
 
@@ -164,7 +164,7 @@ End******** */
 }
 
 .nav_icons span:hover {
-  color: #0cc3ce;
+  color: #b7472a;
 }
 
 .humburgur_menu {
@@ -173,9 +173,30 @@ End******** */
 }
 
 .humburgur_menu:hover {
-  color: #0cc3ce;
+  color: #b7472a;
 }
 
+.cart_img {
+  width: 100%;
+  height: auto;
+}
+
+.accordion-item {
+  color: rgb(0, 0, 0);
+  border: 0 !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  background-color: #ffffff !important;
+}
+
+.accordion-button {
+  padding: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: hsl(0, 0%, 0%) !important;
+}
 /* ********Navbar Css End******** */
 
 /* ***********Banner Css Start******** */
@@ -213,8 +234,8 @@ End******** */
 }
 
 .bg_img_conent_btns .btn1 {
-  background-color: #0cc3ce;
-  border: 1px solid #0cc3ce;
+  background-color: #b7472a;
+  border: 1px solid #b7472a;
   color: #fff;
   font-size: 12px;
   margin: 5px;
@@ -236,7 +257,7 @@ End******** */
 }
 
 .bg_img_conent_btns .btn2:hover {
-  background-color: #0cc3ce;
+  background-color: #b7472a;
   color: #ffffff;
 }
 
@@ -259,7 +280,8 @@ End******** */
 }
 
 .carousel_content_img {
-  background-image: url(../../assets/images/background.avif);
+  position: relative;
+  background-image: url(https://templatekit.jegtheme.com/textilery/wp-content/uploads/sites/122/2021/07/bg.jpg);
   width: 100%;
   height: 60vh;
   background-size: cover;
@@ -269,14 +291,16 @@ End******** */
   display: flex;
   justify-content: center;
 }
-.carousel-control-prev {
-  justify-content: start;
+.carousel-control-prev-icon {
+  opacity: 0;
 }
-.carousel-control-next {
-  justify-content: end;
+.carousel-control-next-icon {
+  opacity: 0;
 }
 
 .carousel_content {
+  position: absolute;
+  width: 100%;
   color: #ffffff;
   padding: 10px 50px 10px 50px;
   text-align: start;
@@ -292,6 +316,7 @@ End******** */
 .carousel_content h1 {
   font-family: Poppins, sans-serif;
   color: #ffffff;
+  font-size: 58px;
   line-height: 60px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -300,10 +325,14 @@ End******** */
 }
 
 .carousel_content p {
-  margin-top: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.carousel_link_div {
+  margin-top: 60px;
+  text-align: start;
 }
 
 .shipping_banner_link_div {
@@ -311,14 +340,13 @@ End******** */
 }
 
 .carousel_link {
+  width: 250px;
   font-size: 12px;
   border: 1px solid #ffffff80;
-  width: auto;
   text-transform: uppercase;
   text-align: center;
   line-height: 40px;
 }
-
 
 .carousel_link:hover {
   background-color: black;
@@ -360,13 +388,14 @@ End******** */
 }
 
 .card_link:hover {
-  color: #0cc3ce;
+  color: #b7472a;
 }
 
 .card_date {
   font-size: 13px;
   margin-top: 5px;
-  color: #0cc3ce;
+  color: #b7472a;
+
   font-family: Poppins, sans-serif;
   font-weight: 500;
 }
@@ -430,35 +459,6 @@ End******** */
 }
 /* ************ShippingBar Css End*********** */
 
-/* ************Trending Css Start*********** */
-.trending_top_div {
-  padding-bottom: 45px;
-}
-
-.media-object {
-  width: 60px;
-}
-
-.head_content h4:after {
-  content: "";
-  width: 60%;
-  margin-left: 5px;
-  border: 0.5px solid #dadada;
-  top: 50%;
-  position: absolute;
-}
-
-.media-link a {
-  color: #888787;
-  line-height: 1.2em;
-  font-size: 12px;
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
-  padding: 0px 2px 0px 2px;
-}
-
-/* ************Trending Css End*********** */
-
 /* ************SellerCard Css Start*********** */
 
 .seller_top_div {
@@ -468,34 +468,52 @@ End******** */
   margin-top: 30px;
 }
 
+.card-title {
+  min-height: 48px;
+}
+
+.card-body p {
+  margin-bottom: 0 !important;
+}
+
+.card-body {
+  padding-bottom: 0 !important;
+}
 .card_size {
   text-align: left;
+  height: 60vh;
 }
+
 .card_img {
   width: 100%;
+  min-height: 303px;
 }
 .card_category {
-  min-height: 40px;
+  min-height: 37px;
 }
 .card_category a {
   text-decoration: none;
-  padding: 1px;
+  padding-right: 1px;
   color: #888787;
   font-size: 12px;
   font-family: Poppins, sans-serif;
 }
 .card_category a:hover {
-  color: #0cc3ce;
+  color: #b7472a;
 }
 .card-img-top {
   object-fit: cover;
-  height: 280px;
+  height: auto;
 }
 
 /* ************SellerCard Css 
 End*********** */
 
 /* ************TextComponent Css Start*********** */
+
+.text_img_icons {
+  width: 70px;
+}
 
 .text_cmpnt_top_div {
   padding-top: 58px;
@@ -520,13 +538,17 @@ End*********** */
   line-height: 1.2em;
   font-weight: 600;
   text-transform: uppercase;
-  color: #0cc3ce;
+  color: #b7472a;
 }
 
 /* ************TextComponent Css End*********** */
 
 /* ************Footer Css Start*********** */
 
+.ftr_logo {
+  color: #ffffff;
+  text-align: start;
+}
 .footer_bg {
   display: block;
   background-color: #191919;
@@ -543,7 +565,7 @@ End*********** */
 }
 
 .footer_address {
-  line-height: 28px;
+  line-height: 30px;
 }
 
 .logo_size {
@@ -552,23 +574,24 @@ End*********** */
 
 .footer_social_icons a {
   padding: 0px 15px 0px 0px;
-  font-size: 30px;
+  font-size: 25px;
   color: #ffffff;
 }
 
 .footer_social_icons a:hover {
-  color: #0cc3ce;
+  color: #b7472a;
 }
 
 .footer_date {
   font-size: 13px;
-  color: #0cc3ce;
+  color: #b7472a;
   font-family: Poppins, sans-serif;
   font-weight: 500;
 }
 
 .footer_heading {
   font-size: 18px;
+  line-height: 28px;
 }
 
 .footer_para_link {
@@ -604,6 +627,8 @@ End*********** */
 }
 
 .ftr_email {
+  color: white;
+  padding-left: 20px;
   width: 100%;
   font-size: 13px;
   line-height: 40px;
@@ -628,7 +653,7 @@ End*********** */
 }
 
 .ftr_email_arrow_btn:hover {
-  background-color: #0cc3ce;
+  background-color: #b7472a;
   color: #ffffff;
   border: 1px solid #fff;
 }
@@ -641,13 +666,12 @@ End*********** */
 .footer_page_link a {
   display: flex;
   text-decoration: none;
-  font-size: 13px;
   color: #ffffff;
   padding: 0px 0px 16px 0px;
 }
 
 .footer_page_link a:hover {
-  color: #0cc3ce;
+  color: #b7472a;
 }
 
 .footer_bottom {
@@ -657,13 +681,112 @@ End*********** */
 }
 
 .footer_bottom_left {
+  margin-left: 80px;
   color: #ffffff;
-  text-align: center;
+  text-align: start;
   padding-top: 14px;
 }
 
+.footer_bottom_right {
+  margin-right: 80px;
+  display: flex;
+  justify-content: end;
+}
+
 .ftr_debit_cards img {
-  padding: 8px 0px;
+  width: 50px;
 }
 
 /* ************Footer Css End*********** */
+
+/* ************IncDecCounter Css Start*********** */
+
+.cart {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.input-group {
+  display: block;
+  margin-top: 10px;
+}
+
+.input-group-prepend {
+  display: inline-block;
+  flex-direction: column;
+}
+
+.inc_dec_btn {
+  width: 18px;
+  height: 19px;
+  /* display: block; */
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid #d6d6d6;
+  border-style: solid;
+  -webkit-transition: color 0.15s ease-out, background-color 0.15s ease-out,
+    border-color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out, background-color 0.15s ease-out,
+    border-color 0.15s ease-out;
+  transition: color 0.15s ease-out, background-color 0.15s ease-out,
+    border-color 0.15s ease-out;
+}
+
+.input-text {
+  height: 38px;
+  width: 38px;
+  display: inline-block;
+  padding: 0;
+  background-color: #fff;
+  text-align: center;
+  color: #101010;
+  font-size: 14px;
+  line-height: 38px;
+  border: 1px solid #d6d6d6;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  border-right: 0;
+}
+
+.buy_now {
+  /* display: block; */
+  margin-top: 10px;
+}
+
+.buy_btn {
+  outline: 0;
+  font-weight: 600;
+  padding: 0 0 0 35px;
+  font-size: 12px;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: Poppins, sans-serif;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out,
+    border-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out,
+    border-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out,
+    border-color 0.2s ease-out;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #191919;
+  color: #fff;
+}
+
+.cart_icon {
+  padding: 0 16px;
+  font-size: 23px;
+  vertical-align: middle;
+  /* float: right; */
+  line-height: inherit;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+/* ************IncDecCounter Css End*********** */

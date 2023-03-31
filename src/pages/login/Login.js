@@ -1,16 +1,37 @@
 import React from "react";
 import "./Login.css";
-// import login from "../../assets/images/login_bg.jpg";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import {Link} from 'react-router-dom'
 
 function Login() {
   return (
     <>
       <section>
-        <div className="login_bg_img">
+        {/* <div className="login_bg_img">
           <h1>My Account</h1>
+        </div> */}
+         <div className="contact_bg_img">
+          <div className="layer">
+            <Container>
+              <Row>
+                <Col>
+                  <div className="content">
+                    <h2>My Account</h2>
+                    <div className="breadcrumb">
+                      <span>
+                        <Link title="Homepage" to="/home">
+                          Home
+                        </Link>
+                      </span>
+                      <span>Account</span>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
         </div>
-        <div className="contact_div">
+        <div className="contact_div ">
           <Container>
             <Row>
               <Col>

@@ -1,20 +1,19 @@
 import React from "react";
 import { Container, Row, Col, Navbar, Nav, Form } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
-import logo from "../assets/images/logo-footer.png";
 import { ImFacebook2, ImVimeo2, ImInstagram, ImLinkedin } from "react-icons/im";
 import { AiFillCopyrightCircle } from "react-icons/ai";
 import shoe from "../assets/images/ftr-shoe.jpg";
 import insta from "../assets/images/ftr-insta.jpg";
 import shadow from "../assets/images/ftr-shadow.jpg";
 import scenery from "../assets/images/ftr-scenery.jpg";
+import holi from "../assets/images/ftr-holi.jpg";
 import { TfiAngleRight } from "react-icons/tfi";
-import debit from "../assets/images/footer-debit-cards.png";
+import visa from "../assets/images/visa.png";
+import master from "../assets/images/master.png";
+import paypal from "../assets/images/paypal.png";
 import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
-// import Services from "../pages/Services";
-// import Product from "../pages/Product";
-// import Contact from "../pages/Contact";
 
 function Footer() {
   return (
@@ -26,11 +25,12 @@ function Footer() {
               <Col xm={12} md={6} lg={3}>
                 <div>
                   <Navbar.Brand to="#home">
-                    <img
+                    {/* <img
                       src={logo}
                       className="d-inline-block align-top logo_size"
                       alt="React Bootstrap logo"
-                    />
+                    /> */}
+                    <h3 className="ftr_logo">Logo</h3>
                   </Navbar.Brand>
                   <div className="footer_content">
                     <p>
@@ -140,6 +140,11 @@ function Footer() {
                           <img src={scenery} alt="" />
                         </Link>
                       </li>
+                      <li>
+                        <Link to="#holi">
+                          <img src={holi} alt="" />
+                        </Link>
+                      </li>
                     </ul>
                     <hr />
 
@@ -170,23 +175,38 @@ function Footer() {
         </div>
         <div className="footer_bottom">
           <Container fluid>
-            <Row>
-              <Col sm={6}>
-                <div className="footer_bottom_left">
-                  <p>
-                    <span>
-                      <AiFillCopyrightCircle />
-                     </span>
-                     2023 Suprema India,Inc.All rights reserved.
-                  </p>
-                </div>
-              </Col>
-              <Col sm={6}>
-                <div className="ftr_debit_cards">
-                  <img src={debit}  className="img-fluid" alt="debit-cards" />
-                </div>
-              </Col>
-            </Row>
+              <Row>
+                <Col sm={6}>
+                  <div className="footer_bottom_left">
+                    <p>
+                      <span>
+                        <AiFillCopyrightCircle />
+                      </span>
+                      {new Date().getFullYear()} Suprema India,Inc.All rights reserved.
+                    </p>
+                  </div>
+                </Col>
+                <Col sm={6}>
+                  <div className="footer_bottom_right">
+                    <div className="ftr_debit_cards pe-3">
+                      <NavLink to="#">
+                        {" "}
+                        <img src={visa} alt="debit-cards" />
+                      </NavLink>
+                    </div>
+                    <div className="ftr_debit_cards pt-2 pe-3">
+                      <NavLink to="#">
+                        <img src={master} alt="debit-cards" />
+                      </NavLink>
+                    </div>
+                    <div className="ftr_debit_cards">
+                      <NavLink to="#">
+                        <img src={paypal} alt="debit-cards" />
+                      </NavLink>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
           </Container>
         </div>
       </section>

@@ -6,6 +6,10 @@ import asseceory from "../assets/images/asseceory.avif";
 import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 
+// import shirt from "../assets/images/shirt-mockup.jpg";
+// import rack from "../assets/images/clothing-rack.jpg";
+// import kurti from "../assets/images/kurti_shop6.webp";
+
 function Carousels() {
   return (
     <>
@@ -23,11 +27,16 @@ function Carousels() {
         </Container>
         <div className="carousel_div">
           <Carousel>
-            <Carousel.Item interval={1000}>
+            <Carousel.Item interval={2000}>
               <Container>
                 <Row>
                   <Col sm={6} className="p-0">
                     <div className="carousel_content_img">
+                      {/* <img
+                        className="carousel_img"
+                        src={shirt}
+                        alt="First slide"
+                      /> */}
                       <div className="carousel_content">
                         <h1>Sports Wear</h1>
                         <p>
@@ -36,10 +45,7 @@ function Carousels() {
                           quasi eius cum quisquam error necessitatibus.
                         </p>
                         <div className="carousel_link_div">
-                          <Nav.Link
-                            className="carousel_link"
-                            href="#action1"
-                          >
+                          <Nav.Link className="carousel_link " href="#action1">
                             Read More!
                           </Nav.Link>
                         </div>
@@ -64,6 +70,11 @@ function Carousels() {
                 <Row>
                   <Col sm={6} className="p-0">
                     <div className="carousel_content_img">
+                    {/* <img
+                        className="carousel_img"
+                        src={rack}
+                        alt="First slide"
+                      /> */}
                       <div className="carousel_content">
                         <h1>Sneaker Shoe</h1>
                         <p>
@@ -72,10 +83,7 @@ function Carousels() {
                           quasi eius cum quisquam error necessitatibus.
                         </p>
                         <div className="carousel_link_div">
-                          <Nav.Link
-                            className="carousel_link"
-                            href="#action1"
-                          >
+                          <Nav.Link className="carousel_link" href="#action1">
                             Read More!
                           </Nav.Link>
                         </div>
@@ -100,6 +108,11 @@ function Carousels() {
                 <Row>
                   <Col sm={6} className="p-0">
                     <div className="carousel_content_img">
+                    {/* <img
+                        className="carousel_img"
+                        src={kurti}
+                        alt="First slide"
+                      /> */}
                       <div className="carousel_content">
                         <h1>Accessories</h1>
                         <p>
@@ -108,10 +121,7 @@ function Carousels() {
                           quasi eius cum quisquam error necessitatibus.
                         </p>
                         <div className="carousel_link_div">
-                          <Nav.Link
-                            className="carousel_link"
-                            href="#action1"
-                          >
+                          <Nav.Link className="carousel_link" href="#action1">
                             Read More!
                           </Nav.Link>
                         </div>
