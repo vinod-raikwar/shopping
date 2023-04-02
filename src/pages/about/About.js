@@ -335,6 +335,56 @@ function About() {
           </Container>
         </div>
         {/* ***********TEAM SECTION END*************** */}
+
+
+        <div className="about-value-section mrt50 mrb50">
+        <Container>
+          <div className="about-value-main">
+            <Row>
+              <Col md={7}>
+                <div className="about-value-box">
+                  <div className="main_heading">
+                    <h2>What we value</h2>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the Lorem Ipsum is
+                      simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum has been the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the Lorem Ipsum is
+                      simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum has been the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                  </div>
+                  <div className="about-img-box">
+                    <img className="d-block w-100" src={member_1} alt="about Img" />
+                  </div>
+                </div>
+              </Col>
+              {/* ========COLUMN END======== */}
+              <Col md={4}>
+                <div className="about-value-box">
+                  <div className="about-img-box">
+                    <img className="d-block w-100" src={member_2} alt="about Img" />
+                  </div>
+                  <div className="main_heading mt-4">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the Lorem Ipsum is
+                      simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum has been the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                    <h6>Ipsum has</h6>
+                    <span>Funder Of Beautain</span>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Container>
+      </div>
       </section>
     </>
   );

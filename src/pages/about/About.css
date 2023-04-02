@@ -266,3 +266,63 @@
 } */
 
 /* ***********COUNTER SECTION CSS END*************** */
+/* // ======TESTIMONIAL SECTION CSS START=====
+.testimonial-main {
+  margin-bottom: 70px;
+}
+.testimonial-slide-box {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 30px 30px;
+  margin: 0px 10px;
+  .testimonial-img-box {
+    img {
+      max-width: 111px;
+      margin: 0px auto;
+      border-radius: 100px;
+    }
+  }
+  .testimonial-content-box {
+    margin-top: 20px;
+  }
+}
+.testimonial-slider {
+  .slick-arrow {
+    background: #911439;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+  }
+  .slick-next {
+    left: -27%;
+    bottom: 30%;
+    top: unset;
+    &:hover {
+      background: #911439;
+      color: #fff;
+    }
+    &:focus {
+      background: #911439;
+      color: #fff;
+    }
+  }
+  .slick-prev {
+    left: -33%;
+    right: unset;
+    z-index: 9;
+    bottom: 30%;
+    top: unset;
+    &:hover {
+      background: #911439;
+      color: #fff;
+    }
+    &:focus {
+      background: #911439;
+      color: #fff;
+    }
+  }
+  &:before {
+    color: #fff;
+  }
+}
+// ======TESTIMONIAL SECTION CSS END===== */
