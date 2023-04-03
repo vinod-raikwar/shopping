@@ -11,11 +11,16 @@ import { BsTwitter, BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import portfolio_1 from "../../assets/images/portfolio-1.jpg";
 import portfolio_5 from "../../assets/images/portfolio-5.jpg";
 import portfolio_7 from "../../assets/images/portfolio-7.jpg";
-import { BsPlusLg,BsLink45Deg,BsEmojiSmile,BsJournalRichtext,BsHeadset } from "react-icons/bs";
-import { HiOutlineUsers} from "react-icons/hi";
-import CountUp from 'react-countup';
-import ScrollTrigger from 'react-scroll-trigger';
-
+import {
+  BsPlusLg,
+  BsLink45Deg,
+  BsEmojiSmile,
+  BsJournalRichtext,
+  BsHeadset,
+} from "react-icons/bs";
+import { HiOutlineUsers } from "react-icons/hi";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 function About() {
   return (
@@ -45,6 +50,68 @@ function About() {
         </div>
         {/* ***********SLIDE SECTION END*************** */}
 
+        {/* ***********PROFILE SECTION START*************** */}
+        <div className="about-value-section mt-5 mb-5">
+          <Container>
+            <div className="about-value-main">
+              <Row>
+                <Col md={7}>
+                  <div className="about-value-box">
+                    <div className="main_heading">
+                      <h2>What we value</h2>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the Lorem Ipsum is
+                        simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's
+                      </p>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the Lorem Ipsum is
+                        simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's
+                      </p>
+                    </div>
+                    <div className="about-img-box">
+                      <img
+                        className="d-block w-100"
+                        src={member_1}
+                        alt="about Img"
+                      />
+                    </div>
+                  </div>
+                </Col>
+                {/* ========COLUMN END======== */}
+                <Col md={4}>
+                  <div className="about-value-box">
+                    <div className="about-img-box">
+                      <img
+                        className="d-block w-100"
+                        src={member_2}
+                        alt="about Img"
+                      />
+                    </div>
+                    <div className="main_heading mt-4">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the Lorem Ipsum is
+                        simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's
+                      </p>
+                      <h6>Ipsum has</h6>
+                      <span>Funder Of Beautain</span>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Container>
+        </div>
+        {/* ***********PROFILE SECTION END*************** */}
+
         {/* ***********COUNT SECTION START*************** */}
         <div className="section counts">
           <Container>
@@ -55,9 +122,10 @@ function About() {
                     <BsEmojiSmile />
                   </span>
                   <ScrollTrigger>
-                  <span className="counter"><CountUp start={0} end={423} duration={5} delay={0}/>
-                  <span className="plus_icon">+</span>
-                  </span>
+                    <span className="counter">
+                      <CountUp start={0} end={423} duration={5} delay={0} />
+                      <span className="plus_icon">+</span>
+                    </span>
                   </ScrollTrigger>
 
                   <p>
@@ -75,13 +143,14 @@ function About() {
                     <BsJournalRichtext />
                   </span>
                   <ScrollTrigger>
-                  <span className="counter"><CountUp start={0} end={521} duration={5} delay={0}/>
-                  <span className="plus_icon">+</span></span>
+                    <span className="counter">
+                      <CountUp start={0} end={521} duration={5} delay={0} />
+                      <span className="plus_icon">+</span>
+                    </span>
                   </ScrollTrigger>
-                  
+
                   <p>
-                    <strong>Projects</strong> consequuntur quae qui deca
-                    rode.
+                    <strong>Projects</strong> consequuntur quae qui deca rode.
                   </p>
 
                   <Link to="#">Find out more »</Link>
@@ -94,9 +163,10 @@ function About() {
                     <BsHeadset />
                   </span>
                   <ScrollTrigger>
-                  <span className="counter"><CountUp start={0} end={1440} duration={5} delay={0}/>
-                  <span className="plus_icon">+</span>
-                  </span> 
+                    <span className="counter">
+                      <CountUp start={0} end={1440} duration={5} delay={0} />
+                      <span className="plus_icon">+</span>
+                    </span>
                   </ScrollTrigger>
 
                   <p>
@@ -111,11 +181,13 @@ function About() {
               <Col xs={12} sm={6} md={3}>
                 <div className="count_box">
                   <span className="icon">
-                    <HiOutlineUsers/>
+                    <HiOutlineUsers />
                   </span>
                   <ScrollTrigger>
-                  <span className="counter"><CountUp start={0} end={150} duration={5} delay={0}/>
-                  <span className="plus_icon">+</span></span>
+                    <span className="counter">
+                      <CountUp start={0} end={150} duration={5} delay={0} />
+                      <span className="plus_icon">+</span>
+                    </span>
                   </ScrollTrigger>
 
                   <p>
@@ -335,56 +407,6 @@ function About() {
           </Container>
         </div>
         {/* ***********TEAM SECTION END*************** */}
-
-
-        <div className="about-value-section mrt50 mrb50">
-        <Container>
-          <div className="about-value-main">
-            <Row>
-              <Col md={7}>
-                <div className="about-value-box">
-                  <div className="main_heading">
-                    <h2>What we value</h2>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the Lorem Ipsum is
-                      simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                    </p>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the Lorem Ipsum is
-                      simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                    </p>
-                  </div>
-                  <div className="about-img-box">
-                    <img className="d-block w-100" src={member_1} alt="about Img" />
-                  </div>
-                </div>
-              </Col>
-              {/* ========COLUMN END======== */}
-              <Col md={4}>
-                <div className="about-value-box">
-                  <div className="about-img-box">
-                    <img className="d-block w-100" src={member_2} alt="about Img" />
-                  </div>
-                  <div className="main_heading mt-4">
-                    <p>
-                      Lorem Ipsum is simply dummy text of the Lorem Ipsum is
-                      simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                    </p>
-                    <h6>Ipsum has</h6>
-                    <span>Funder Of Beautain</span>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </Container>
-      </div>
       </section>
     </>
   );

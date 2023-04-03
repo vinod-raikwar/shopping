@@ -6,6 +6,11 @@
   src: local("Poppins"),
     url(../../assets/font/Poppins-Regular.ttf) format("truetype");
 }
+body{
+  font-family: "Poppins";
+  src: local("Poppins"),
+  url(../../assets/font/Poppins-Regular.ttf) format("truetype");
+}
 
 h6 {
   color: #101010;
@@ -234,37 +239,47 @@ End******** */
 }
 
 .bg_img_conent_btns .btn1 {
-  background-color: #b7472a;
   border: 1px solid #b7472a;
+  background-color: #b7472a;
   color: #fff;
   font-size: 12px;
   margin: 5px;
-  padding: 0 35px;
+  padding: 1px 35px;
   line-height: 47px;
   text-transform: uppercase;
   font-weight: 600;
+
+  background: linear-gradient(to right, #c4573b 50%, #b7472a 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
 }
 
 .bg_img_conent_btns .btn2 {
   color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.5);
+  border:1px solid #ffffff;
   font-size: 12px;
   margin: 5px;
   padding: 0 50px;
   line-height: 47px;
   text-transform: uppercase;
   font-weight: 600;
+
+  background: linear-gradient(to right, #b7472a 50%,transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
 }
 
 .bg_img_conent_btns .btn2:hover {
-  background-color: #b7472a;
+  background-position: left bottom;
   color: #ffffff;
 }
 
 .bg_img_conent_btns .btn1:hover {
-  background-color: #000000;
-  border: 1px solid #000000;
-  color: #ffffff;
+  background-position: left bottom;
+  border: 1px solid #b7472a;
+
 }
 /* **************Banner Css End***********/
 

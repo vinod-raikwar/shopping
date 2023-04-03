@@ -165,14 +165,6 @@ function Contact() {
               </Row>
             </div>
           </div>
-          <div className="main-btn-box mb-4">
-            <Link
-              to="/"
-              className="main_btn text-center hvr-bounce-to right"
-            >
-              Read More
-            </Link>
-          </div>
         </Container>
 
       </section>

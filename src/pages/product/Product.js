@@ -5,23 +5,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Product.css";
 
-import shawl from "../../assets/images/p1.jpg";
-import skarf from "../../assets/images/p2.jpg";
-import watch from "../../assets/images/p3.jpg";
-import shoe from "../../assets/images/p4.jpg";
+import skarf from "../../assets/images/product/p2.jpg";
+import watch from "../../assets/images/product/p3.jpg";
+import shawl from "../../assets/images/product/p1.jpg";
+import shoe from "../../assets/images/product/p4.jpg";
 
-import headphone from "../../assets/images/headphone.jpg";
-import headphone1 from "../../assets/images/headphone1.jpg";
+// import headphone from "../../assets/images/headphone.jpg";
+// import headphone1 from "../../assets/images/headphone1.jpg";
 
 
-import m1 from "../../assets/images/m_1.webp";
-import m2 from "../../assets/images/m_2.webp";
-import m3 from "../../assets/images/m_3.webp";
-import m4 from "../../assets/images/m_4.webp";
-import a1 from "../../assets/images/arival1.webp";
-import a2 from "../../assets/images/arival2.webp";
-import a3 from "../../assets/images/arival3.webp";
-import a4 from "../../assets/images/arival4.webp";
+import m1 from "../../assets/images/product/m_1.webp";
+import m2 from "../../assets/images/product/m_2.webp";
+import m3 from "../../assets/images/product/m_3.webp";
+import m4 from "../../assets/images/product/m_4.webp";
+import a1 from "../../assets/images/product/arival1.webp";
+import a2 from "../../assets/images/product/arival2.webp";
+import a3 from "../../assets/images/product/arival3.webp";
+import a4 from "../../assets/images/product/arival4.webp";
+
 
 function Product() {
   return (
@@ -177,7 +178,7 @@ function Product() {
                       <Card.Img
                         className="card_img animate__animated animate__zoomIn"
                         variant="top"
-                        src={headphone}
+                        // src={headphone}
                         alt="headphone"
                       />
                     </Link>
@@ -202,7 +203,7 @@ function Product() {
                       <Card.Img
                         className="card_img"
                         variant="top"
-                        src={ headphone1}
+                        // src={ headphone1}
                         alt=" headphone1 "
                       />
                     </Link>
