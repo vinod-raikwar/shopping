@@ -4,14 +4,16 @@ import { NavLink, Link } from "react-router-dom";
 import { ImFacebook2, ImVimeo2, ImInstagram, ImLinkedin } from "react-icons/im";
 import { AiFillCopyrightCircle } from "react-icons/ai";
 import shoe from "../assets/images/footer/ftr-shoe.jpg";
-import insta from "../assets/images/footer/ftr-insta.jpg";
-import shadow from "../assets/images/footer/ftr-shadow.jpg";
-import scenery from "../assets/images/footer/ftr-scenery.jpg";
-import holi from "../assets/images/footer/ftr-holi.jpg";
+// import insta from "../assets/images/footer/ftr-insta.jpg";
+// import shadow from "../assets/images/footer/ftr-shadow.jpg";
+// import scenery from "../assets/images/footer/ftr-scenery.jpg";
+// import holi from "../assets/images/footer/ftr-holi.jpg";
 import { TfiAngleRight } from "react-icons/tfi";
 import visa from "../assets/images/footer/visa.png";
 import master from "../assets/images/footer/master.png";
 import paypal from "../assets/images/footer/paypal.png";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaPhoneVolume, FaFax, FaAddressCard } from "react-icons/fa";
 import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 
@@ -33,16 +35,87 @@ function Footer() {
                     <h3 className="ftr_logo">Logo</h3>
                   </Navbar.Brand>
                   <div className="footer_content">
-
                     <p className="footer_address">
-                      198 West 21th Street, Suite 721, New York NY 10010
+                      <span><FaAddressCard /></span> Our Address <br />
+                      TechInfini Solutions Pvt. Ltd.
+                      402, Airen Heights, Scheme No. 54, Opposite C21 Mall,Indore, Madhya Pradesh 452010
                       <br />
-                      Email: suprema@qodeint.com
+                      <span><AiOutlineMail /></span> Example@test.com
                       <br />
-                      Phone: +88 (0) 101 0000 000
+                      <span><FaPhoneVolume /></span> +91 (0) 101 0000 000
                       <br />
-                      Fax:+88 (0) 202 0000 001
+                      <span><FaFax /></span>+91 (0) 202 0000 001
                     </p>
+
+                  </div>
+                </div>
+              </Col>
+              <Col xm={12} md={6} lg={3}>
+                <div className="">
+                  <h5 className="footer_heading">Latest Post</h5>
+                  <div className="footer_content">
+                    <div className="media d-flex">
+                      <div className="media-left">
+                        <Link to="#/"><img src={shoe} alt="" class="media-object" style={{ width: "60px" }} /></Link>
+                      </div>
+                      <div className="media-body ps-3">
+                        <p className="media-heading">John Doe<p className="footer_date"><small><i>Posted onFebruary 12, 2016 </i></small></p></p>
+                        <p>Lorem ipsum...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              <Col xm={12} md={6} lg={3}>
+                <div className="page_links">
+                  <h5 className="footer_heading ms-5">Page Links</h5>
+
+                  <div className="footer_content footer_page_link">
+                    <Row>
+                      <Col xs={6}>
+                        <div className="ms-5">
+                          <NavLink to="/">Home</NavLink>
+                          <NavLink to="/product">Product</NavLink>
+                          <NavLink to="/services">Services</NavLink>
+                        </div>
+                      </Col>
+                      <Col xs={6}>
+                        <div className="">
+                          <NavLink to="/about">About Us</NavLink>
+                          <NavLink to="/blog">Blog</NavLink>
+                          <NavLink to="/contact">Contact Us</NavLink>
+                          <NavLink to="/login">Login</NavLink>
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
+                </div>
+              </Col>
+              <Col xm={12} md={6} lg={3}>
+                <div className="">
+                  <h5 className="footer_heading">Newsletter</h5>
+                  <div className="footer_content">
+                    <Form>
+                      <div className="ftr_email_div">
+                        <div className="ftr_subscribe">
+                          <label htmlFor="subscribe">
+                            Get E-mail updates about our latest shop and special offers.:
+                          </label>
+                        </div>
+                        <div className="ftr_email_div">
+                          <input
+                            className="ftr_email"
+                            type="email"
+                            placeholder="E-mail"
+                          />
+                          <span className="ftr_email_arrow_btn">
+                            <TfiAngleRight />
+                          </span>
+                        </div>
+                      </div>
+                    </Form>
+                    <hr />
+                    <h5 className="footer_heading">Follow Us</h5>
                     <Nav className="footer_social_icons">
                       <NavLink to="#">
                         <ImFacebook2 />
@@ -60,145 +133,43 @@ function Footer() {
                   </div>
                 </div>
               </Col>
-              <Col xm={12} md={6} lg={3}>
-                <div className="">
-                  <h5 className="footer_heading">Latest Post</h5>
-
-                  <div className="footer_content">
-                    <p className="footer_para_link">
-                      Where Music Is Headed Next
-                    </p>
-                    <p className="footer_date">February 12, 2016</p>
-
-                    <p className="footer_para_link">
-                      Sports Brand New Advertising Campaign
-                    </p>
-                    <p className="footer_date">February 12, 2016</p>
-
-                    <p className="footer_para_link">
-                      Snippets From The Tech Mobile Conference
-                    </p>
-                    <p className="footer_date">February 12, 2016</p>
-
-                  </div>
-                </div>
-              </Col>
-              <Col xm={12} md={6} lg={3}>
-                <div className="page_links">
-                  <h5 className="footer_heading">Page Links</h5>
-
-                  <div className="footer_content footer_page_link">
-                    <Row>
-                      <Col xs={6}>
-                        <div className="">
-                          <NavLink to="/">Home</NavLink>
-                          <NavLink to="/about">About</NavLink>
-                          <NavLink to="/services">Services</NavLink>
-                        </div>
-                      </Col>
-                      <Col xs={6}>
-                        <div className="">
-                          <NavLink to="/product">Product</NavLink>
-                          <NavLink to="/contact">Contact</NavLink>
-                          <NavLink to="/login">Login</NavLink>
-                        </div>
-                      </Col>
-                    </Row>
-                  </div>
-                </div>
-              </Col>
-              <Col xm={12} md={6} lg={3}>
-                <div className="">
-                  <h5 className="footer_heading">Instagram Feed</h5>
-                  <div className="footer_content">
-                    <ul>
-                      <li>
-                        <Link to="#shoe">
-                          <img src={shoe} alt="" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#insta">
-                          <img src={insta} alt="" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#shadow">
-                          <img src={shadow} alt="" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#scenery">
-                          <img src={scenery} alt="" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#holi">
-                          <img src={holi} alt="" />
-                        </Link>
-                      </li>
-                    </ul>
-                    <hr />
-
-                    <Form>
-                      <div className="ftr_email_div">
-                        <div className="ftr_subscribe">
-                          <label htmlFor="subscribe">
-                          Get E-mail updates about our latest shop and special offers.:
-                          </label>
-                        </div>
-                        <div className="ftr_email_div">
-                          <input
-                            className="ftr_email"
-                            type="email"
-                            placeholder="E-mail"
-                          />
-                          <span className="ftr_email_arrow_btn">
-                            <TfiAngleRight />
-                          </span>
-                        </div>
-                      </div>
-                    </Form>
-                  </div>
-                </div>
-              </Col>
             </Row>
           </Container>
         </div>
         <div className="footer_bottom">
           <Container fluid>
-              <Row>
-                <Col sm={6}>
-                  <div className="footer_bottom_left">
-                    <p>
-                      <span>
-                        <AiFillCopyrightCircle />
-                      </span>
-                      {new Date().getFullYear()} Suprema India,Inc.All rights reserved.
-                    </p>
+            <Row>
+              <Col sm={6}>
+                <div className="footer_bottom_left">
+                  <p>
+                    <span>
+                      <AiFillCopyrightCircle />
+                    </span>
+                    {new Date().getFullYear()} Suprema India,Inc.All rights reserved.
+                  </p>
+                </div>
+              </Col>
+              <Col sm={6}>
+                <div className="footer_bottom_right">
+                  <div className="ftr_debit_cards pe-3">
+                    <NavLink to="#">
+                      {" "}
+                      <img src={visa} alt="debit-cards" />
+                    </NavLink>
                   </div>
-                </Col>
-                <Col sm={6}>
-                  <div className="footer_bottom_right">
-                    <div className="ftr_debit_cards pe-3">
-                      <NavLink to="#">
-                        {" "}
-                        <img src={visa} alt="debit-cards" />
-                      </NavLink>
-                    </div>
-                    <div className="ftr_debit_cards pt-2 pe-3">
-                      <NavLink to="#">
-                        <img src={master} alt="debit-cards" />
-                      </NavLink>
-                    </div>
-                    <div className="ftr_debit_cards">
-                      <NavLink to="#">
-                        <img src={paypal} alt="debit-cards" />
-                      </NavLink>
-                    </div>
+                  <div className="ftr_debit_cards pt-2 pe-3">
+                    <NavLink to="#">
+                      <img src={master} alt="debit-cards" />
+                    </NavLink>
                   </div>
-                </Col>
-              </Row>
+                  <div className="ftr_debit_cards">
+                    <NavLink to="#">
+                      <img src={paypal} alt="debit-cards" />
+                    </NavLink>
+                  </div>
+                </div>
+              </Col>
+            </Row>
           </Container>
         </div>
       </section>
