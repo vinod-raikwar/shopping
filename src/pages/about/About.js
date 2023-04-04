@@ -2,15 +2,17 @@ import React from "react";
 import "./About.css";
 import { Container, Row, Col, NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import member_1 from "../../assets/images/member-1.jpg";
-import member_2 from "../../assets/images/member-2.jpg";
-import member_3 from "../../assets/images/member-3.jpg";
-import member_4 from "../../assets/images/member-4.jpg";
+import value from "../../assets/images/about/about-value.avif";
+
+import member_1 from "../../assets/images/about/member-1.jpg";
+import member_2 from "../../assets/images/about/member-2.jpg";
+import member_3 from "../../assets/images/about/member-3.jpg";
+import member_4 from "../../assets/images/about/member-4.jpg";
 
 import { BsTwitter, BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
-import portfolio_1 from "../../assets/images/portfolio-1.jpg";
-import portfolio_5 from "../../assets/images/portfolio-5.jpg";
-import portfolio_7 from "../../assets/images/portfolio-7.jpg";
+import portfolio_1 from "../../assets/images/about/portfolio-1.jpg";
+import portfolio_5 from "../../assets/images/about/portfolio-5.jpg";
+import portfolio_7 from "../../assets/images/about/portfolio-7.jpg";
 import {
   BsPlusLg,
   BsLink45Deg,
@@ -54,11 +56,12 @@ function About() {
         <div className="about-value-section mt-5 mb-5">
           <Container>
             <div className="about-value-main">
+              <h2>What we value</h2>
+
               <Row>
                 <Col md={7}>
                   <div className="about-value-box">
                     <div className="main_heading">
-                      <h2>What we value</h2>
                       <p>
                         Lorem Ipsum is simply dummy text of the Lorem Ipsum is
                         simply dummy text of the printing and typesetting
@@ -70,14 +73,13 @@ function About() {
                         Lorem Ipsum is simply dummy text of the Lorem Ipsum is
                         simply dummy text of the printing and typesetting
                         industry. Lorem Ipsum has been the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's
+                        typesetting industry.Ipsum has been the industry's
                       </p>
                     </div>
                     <div className="about-img-box">
                       <img
-                        className="d-block w-100"
-                        src={member_1}
+                        className="d-block w-100 h-50vh"
+                        src={value}
                         alt="about Img"
                       />
                     </div>
@@ -102,7 +104,7 @@ function About() {
                         industry's
                       </p>
                       <h6>Ipsum has</h6>
-                      <span>Funder Of Beautain</span>
+                      <span>Founder Of ....</span>
                     </div>
                   </div>
                 </Col>
@@ -164,8 +166,8 @@ function About() {
                   </span>
                   <ScrollTrigger>
                     <span className="counter">
-                      <CountUp start={0} end={1440} duration={5} delay={0} />
-                      <span className="plus_icon">+</span>
+                      <CountUp start={0} end={10} duration={5} delay={0} />
+                      <span className="plus_icon">K+</span>
                     </span>
                   </ScrollTrigger>
 

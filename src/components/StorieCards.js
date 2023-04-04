@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
-import phone from "../assets/images/phone.jpg";
-import coffee_phone from "../assets/images/coffee_phone.jpg";
-import juice from "../assets/images/juice.jpg";
+import phone from "../assets/images/storie/phone.jpg";
+import coffee_phone from "../assets/images/storie/coffee_phone.jpg";
+import juice from "../assets/images/storie/juice.jpg";
 import { TfiAngleRight } from "react-icons/tfi";
 
 import "../assets/css/Responsive.css";

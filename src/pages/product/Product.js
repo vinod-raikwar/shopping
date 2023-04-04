@@ -10,8 +10,10 @@ import watch from "../../assets/images/product/p3.jpg";
 import shawl from "../../assets/images/product/p1.jpg";
 import shoe from "../../assets/images/product/p4.jpg";
 
-// import headphone from "../../assets/images/headphone.jpg";
-// import headphone1 from "../../assets/images/headphone1.jpg";
+import headphone from "../../assets/images/product/headphone.jpg";
+import sportswear from "../../assets/images/product/Men-Sportswear.jpg";
+import postBag from "../../assets/images/product/postBag.jpg";
+import women_bag from "../../assets/images/product/women-bag.webp";
 
 
 import m1 from "../../assets/images/product/m_1.webp";
@@ -178,7 +180,7 @@ function Product() {
                       <Card.Img
                         className="card_img animate__animated animate__zoomIn"
                         variant="top"
-                        // src={headphone}
+                        src={headphone}
                         alt="headphone"
                       />
                     </Link>
@@ -199,23 +201,25 @@ function Product() {
               <Col xs={12} sm={6} md={3} className="p-0">
                 <div className="seller_cards">
                   <Card className="card_size border-0 border-bottom">
-                    <Link to="# headphone1 ">
+                    <Link to="# sportswear ">
                       <Card.Img
                         className="card_img"
                         variant="top"
-                        // src={ headphone1}
-                        alt=" headphone1 "
+                        src={ sportswear}
+                        alt=" sportswear"
                       />
                     </Link>
 
                     <Card.Body>
                       <Card.Text>
                         <Nav className="card_category">
-                          <NavLink to="#home">Headphones & Earphones</NavLink>
+                          <NavLink to="#home">Men,</NavLink>
+                          <NavLink to="#home">Sports Wear,</NavLink>
+                          <NavLink to="#home">Women</NavLink>
                           
                         </Nav>
                       </Card.Text>
-                      <Card.Title>Linea Silver FX2</Card.Title>
+                      <Card.Title>Graphite Sports Wear </Card.Title>
                       <p>$135.00</p>
                     </Card.Body>
                   </Card>
@@ -225,23 +229,23 @@ function Product() {
               <Col xs={12} sm={6} md={3} className="p-0">
                 <div className="seller_cards">
                   <Card className="card_size border-0 border-bottom">
-                    <Link to="#sweter">
+                    <Link to="#postBag">
                       <Card.Img
                         className="card_img"
                         variant="top"
-                        src={skarf}
-                        alt="sweter"
+                        src={postBag}
+                        alt="postBag"
                       />
                     </Link>
                     <Card.Body>
                       <Card.Text>
                         <Nav className="card_category">
                           <NavLink to="#home">New Collection,</NavLink>
-                          <NavLink to="#features">Sportswear,</NavLink>
+                          <NavLink to="#features">Bags,</NavLink>
                           <NavLink to="#pricing">Women</NavLink>
                         </Nav>
                       </Card.Text>
-                      <Card.Title>Futura Jumper</Card.Title>
+                      <Card.Title>White BagLG</Card.Title>
                       <p>$135.00</p>
                     </Card.Body>
                   </Card>
@@ -251,24 +255,23 @@ function Product() {
               <Col xs={12} sm={6} md={3} className="p-0">
                 <div className="seller_cards">
                   <Card className="card_size border-0 border-bottom">
-                    <Link to="#sneaker">
+                    <Link to="#women_bag">
                       <Card.Img
                         className="card_img"
                         variant="top"
-                        src={watch}
-                        alt="sneaker"
+                        src={women_bag}
+                        alt="women_bag"
                       />
                     </Link>
                     <Card.Body>
                       <Card.Text>
                         <Nav className="card_category">
-                          <NavLink to="#home">Men,</NavLink>
-                          <NavLink to="#features">Shoes,</NavLink>
-                          <NavLink to="#pricing">Spotswear</NavLink>
+                          <NavLink to="#home">Women,</NavLink>
+                          <NavLink to="#features">Hand Bag,</NavLink>
                         </Nav>
                       </Card.Text>
-                      <Card.Title>Leopard Print Sneaker</Card.Title>
-                      <p>$185.00</p>
+                      <Card.Title>Disigner Hand Bag</Card.Title>
+                      <p>$85.00</p>
                     </Card.Body>
                   </Card>
                 </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Carousel, Row, Col, Container, Nav } from "react-bootstrap";
-import sports from "../assets/images/sports.avif";
-import sneaker from "../assets/images/sneaker.avif";
-import asseceory from "../assets/images/asseceory.avif";
+import sports from "../assets/images/category/sports.avif";
+import sneaker from "../assets/images/category/sneaker.avif";
+import asseceory from "../assets/images/category/asseceory.avif";
 import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 

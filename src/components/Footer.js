@@ -3,15 +3,15 @@ import { Container, Row, Col, Navbar, Nav, Form } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
 import { ImFacebook2, ImVimeo2, ImInstagram, ImLinkedin } from "react-icons/im";
 import { AiFillCopyrightCircle } from "react-icons/ai";
-import shoe from "../assets/images/ftr-shoe.jpg";
-import insta from "../assets/images/ftr-insta.jpg";
-import shadow from "../assets/images/ftr-shadow.jpg";
-import scenery from "../assets/images/ftr-scenery.jpg";
-import holi from "../assets/images/ftr-holi.jpg";
+import shoe from "../assets/images/footer/ftr-shoe.jpg";
+import insta from "../assets/images/footer/ftr-insta.jpg";
+import shadow from "../assets/images/footer/ftr-shadow.jpg";
+import scenery from "../assets/images/footer/ftr-scenery.jpg";
+import holi from "../assets/images/footer/ftr-holi.jpg";
 import { TfiAngleRight } from "react-icons/tfi";
-import visa from "../assets/images/visa.png";
-import master from "../assets/images/master.png";
-import paypal from "../assets/images/paypal.png";
+import visa from "../assets/images/footer/visa.png";
+import master from "../assets/images/footer/master.png";
+import paypal from "../assets/images/footer/paypal.png";
 import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 
@@ -33,10 +33,6 @@ function Footer() {
                     <h3 className="ftr_logo">Logo</h3>
                   </Navbar.Brand>
                   <div className="footer_content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut laoreet.
-                    </p>
 
                     <p className="footer_address">
                       198 West 21th Street, Suite 721, New York NY 10010
@@ -84,28 +80,24 @@ function Footer() {
                     </p>
                     <p className="footer_date">February 12, 2016</p>
 
-                    <p className="footer_para_link">
-                      New Music Video Will Blow Your Mind
-                    </p>
-                    <p className="footer_date">February 12, 2016</p>
                   </div>
                 </div>
               </Col>
               <Col xm={12} md={6} lg={3}>
-                <div className="">
-                  <h5 className="footer_heading">Pages</h5>
+                <div className="page_links">
+                  <h5 className="footer_heading">Page Links</h5>
 
                   <div className="footer_content footer_page_link">
                     <Row>
                       <Col xs={6}>
-                        <div>
+                        <div className="">
                           <NavLink to="/">Home</NavLink>
                           <NavLink to="/about">About</NavLink>
                           <NavLink to="/services">Services</NavLink>
                         </div>
                       </Col>
                       <Col xs={6}>
-                        <div>
+                        <div className="">
                           <NavLink to="/product">Product</NavLink>
                           <NavLink to="/contact">Contact</NavLink>
                           <NavLink to="/login">Login</NavLink>
@@ -152,7 +144,7 @@ function Footer() {
                       <div className="ftr_email_div">
                         <div className="ftr_subscribe">
                           <label htmlFor="subscribe">
-                            Subscribe to our newsletter, get 10% off:
+                          Get E-mail updates about our latest shop and special offers.:
                           </label>
                         </div>
                         <div className="ftr_email_div">

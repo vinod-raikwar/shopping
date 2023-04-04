@@ -256,74 +256,28 @@
   transition: ease-in-out 0.3s;
 }
 
-/* .plus_icon{ 
-  position: absolute;
-  font-weight: 600;
-  font-size: 42px;
-  margin-top: -20px;
-  margin-left: 70px;
-  color: #36e2cb;
-} */
 
 /* ***********COUNTER SECTION CSS END*************** */
 
-/* // ======TESTIMONIAL SECTION CSS START=====
-.testimonial-main {
-  margin-bottom: 70px;
-}
-.testimonial-slide-box {
-  background: #f5f5f5;
-  text-align: center;
-  padding: 30px 30px;
-  margin: 0px 10px;
-  .testimonial-img-box {
-    img {
-      max-width: 111px;
-      margin: 0px auto;
-      border-radius: 100px;
-    }
+/* ***********PROFILE SECTION CSS START*************** */
+ 
+  .main_heading span {
+    border-left: 2px solid #b7472a;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 0 0 0 10px;
+    color: #b7472a;
+    font-weight: bold;
   }
-  .testimonial-content-box {
-    margin-top: 20px;
+  .main_heading h2 {
+    font-size: 44px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin: 0;
+    margin: 10px 0px;
   }
-}
-.testimonial-slider {
-  .slick-arrow {
-    background: #911439;
-    width: 50px;
-    height: 50px;
-    color: #fff;
+  .main_heading h6 {
+  text-align: start;
   }
-  .slick-next {
-    left: -27%;
-    bottom: 30%;
-    top: unset;
-    &:hover {
-      background: #911439;
-      color: #fff;
-    }
-    &:focus {
-      background: #911439;
-      color: #fff;
-    }
-  }
-  .slick-prev {
-    left: -33%;
-    right: unset;
-    z-index: 9;
-    bottom: 30%;
-    top: unset;
-    &:hover {
-      background: #911439;
-      color: #fff;
-    }
-    &:focus {
-      background: #911439;
-      color: #fff;
-    }
-  }
-  &:before {
-    color: #fff;
-  }
-}
-// ======TESTIMONIAL SECTION CSS END===== */
+
+/* ***********PROFILE SECTION CSS END*************** */

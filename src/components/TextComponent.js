@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
-import bagGift from "../assets/images/bag-gift.png";
-import service from "../assets/images/customer-service.png";
-import security from "../assets/images/security.png";
+import bagGift from "../assets/images/textIcon/bag-gift.png";
+import service from "../assets/images/textIcon/customer-service.png";
+import security from "../assets/images/textIcon/security.png";
 import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 function TextComponent() {
