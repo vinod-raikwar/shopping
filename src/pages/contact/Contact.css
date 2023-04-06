@@ -14,7 +14,10 @@
   text-align: center;
   color: #ffffff;
 }
-
+.contact_title_desc a {
+  color: #b7472a;
+  text-decoration: none;
+}
 .content h2 {
   text-transform: capitalize;
   font-weight: 700;
@@ -96,8 +99,7 @@
     background: linear-gradient(to right, #c4573b 50%, #b7472a 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all .5s ease-out;
-    
+    transition: all .5s ease-out; 
 }
 
 .contect_submit_btn:hover {

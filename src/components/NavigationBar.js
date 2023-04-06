@@ -1,7 +1,17 @@
 import React, { useState } from "react";
-import {Container,Nav,Navbar,Offcanvas,Row,Col,Accordion,} from "react-bootstrap";
+import {
+  Container,
+  Nav,
+  Navbar,
+  Offcanvas,
+  Row,
+  Col,
+  Accordion,
+  Form,
+  Button,
+} from "react-bootstrap";
 // import logo from "../assets/images/nav-logo-dark.png";
-import IncDecCounter from '../components/IncDecCounter.js'
+import IncDecCounter from "../components/IncDecCounter.js";
 import { VscSearch } from "react-icons/vsc";
 import { BsHandbag } from "react-icons/bs";
 import "../pages/home/Home.css";
@@ -12,11 +22,17 @@ import cart from "../assets/images/cart-product.jpg";
 
 function NavigationBar({ name, ...props }) {
   const [show, setShow] = useState(false);
+  // const [search, setSearch] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
- 
+  // const searchClose = () => setSearch(false);
+  // const searchShow = () => setSearch(true);
+  const searchShow = (e) => {
+    e.preventDefault();
+    
+  }
 
   return (
     <>
@@ -24,7 +40,7 @@ function NavigationBar({ name, ...props }) {
         <Navbar expand="lg" className="light">
           <Container>
             <Navbar.Brand to="/">
-              <h2 className="nav_brand">Logo</h2>
+              <h1 className="nav_brand">Logo</h1>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll" className="justify-content-end">
@@ -43,15 +59,25 @@ function NavigationBar({ name, ...props }) {
               </Nav>
 
               <div className="nav_icons">
-                <NavLink to="search">
-                  <span>
-                    <VscSearch />
-                  </span>
-                </NavLink>
+                <span onClick={searchShow}>
+                  <VscSearch />
+                </span>
 
-                <span onClick={handleShow} className="humburgur_menu">
+                <span onClick={handleShow}>
                   <BsHandbag />
                 </span>
+              </div>
+
+              <div className="search_box">
+                <Form className="d-flex" >
+                  <Form.Control
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
+                  />
+                  <Button variant="outline-success">Search</Button>
+                </Form>
               </div>
 
               <Offcanvas
@@ -96,7 +122,7 @@ function NavigationBar({ name, ...props }) {
                               </Accordion.Body>
                             </Accordion.Item>
                           </Accordion>
-                          <IncDecCounter/>
+                          <IncDecCounter />
                         </div>
                       </Col>
                     </Row>

@@ -11,11 +11,12 @@ import sweter from "../assets/images/seller/sweter.jpg";
 function SellerCards() {
   return (
     <>
-      <section className="seller_top_div">
+      <section>
+        <div  className="mrt58">
         <Container>
           <Row>
             <Col>
-              <div className="seller_top_heading">
+              <div className="main_heading">
                 <h6>Best Sellers</h6>
 
                 <h3>Browse Through Our Best Selleres</h3>
@@ -25,8 +26,8 @@ function SellerCards() {
 
           <Row>
             <Col xs={12} sm={6} md={3} className="p-0">
-              <div className="seller_cards">
-                <Card className="card_size border-0 border-bottom">
+              <div className="mrt30">
+                <Card className="card_size border-0 ">
                   <Link to="#shoe">
                     <Card.Img
                       className="card_img"
@@ -52,8 +53,8 @@ function SellerCards() {
             </Col>
 
             <Col xs={12} sm={6} md={3} className="p-0">
-              <div className="seller_cards">
-                <Card className="card_size border-0 border-bottom">
+              <div className="mrt30">
+                <Card className="card_size border-0">
                   <Link to="#bag">
                     <Card.Img
                       className="card_img"
@@ -79,8 +80,8 @@ function SellerCards() {
             </Col>
 
             <Col xs={12} sm={6} md={3} className="p-0">
-              <div className="seller_cards">
-                <Card className="card_size border-0 border-bottom">
+              <div className="mrt30">
+                <Card className="card_size border-0">
                   <Link to="#sweter">
                     <Card.Img
                       className="card_img"
@@ -105,8 +106,8 @@ function SellerCards() {
             </Col>
 
             <Col xs={12} sm={6} md={3} className="p-0">
-              <div className="seller_cards">
-                <Card className="card_size border-0 border-bottom">
+              <div className="mrt30">
+                <Card className="card_size border-0">
                   <Link to="#sneaker">
                     <Card.Img
                       className="card_img"
@@ -130,8 +131,11 @@ function SellerCards() {
               </div>
             </Col>
           </Row>
-
+          <div className="d-flex justify-content-center mrt30">
+            <Link to="#/" className="link_btn">View All</Link>
+          </div>
         </Container>
+        </div>
       </section>
     </>
   );

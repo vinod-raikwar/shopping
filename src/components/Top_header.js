@@ -19,24 +19,24 @@ function Top_header() {
           <Row>
             <Col md={9}>
               <div className="top-header-left">
-                  <Nav.Link className="vrtcl_line" href="#home">
-                    <span>
-                      <FaPhoneVolume />
-                    </span>
-                    +88(0)1010000000
-                  </Nav.Link>
-                  <Nav.Link href="#link">
-                    <span>
-                      <TfiEmail/>
-                    </span>
-                    suprema@qodeinteractive.com
-                  </Nav.Link>
+                <Nav.Link className="vrtcl_line" href="#home">
+                  <span>
+                    <FaPhoneVolume />
+                  </span>
+                  +88(0)1010000000
+                </Nav.Link>
+                <Nav.Link href="#link">
+                  <span>
+                    <TfiEmail />
+                  </span>
+                  suprema@qodeinteractive.com
+                </Nav.Link>
               </div>
             </Col>
 
             <Col md={3}>
-              <div className="top-header-right-social-icons">
-                {/* <Nav className="justify-content-center"> */}
+              <div className="social-icons d-flex justify-content-end">
+                <Nav>
                   <Nav.Link href="#home">
                     <FaFacebookF />
                   </Nav.Link>
@@ -49,7 +49,7 @@ function Top_header() {
                   <Nav.Link href="#home">
                     <FaLinkedinIn />
                   </Nav.Link>
-                {/* </Nav> */}
+                </Nav>
               </div>
             </Col>
           </Row>

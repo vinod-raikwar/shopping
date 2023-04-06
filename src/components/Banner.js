@@ -1,5 +1,6 @@
 import React from "react";
-import { Row, Col,Container,Button } from "react-bootstrap";
+import { Row, Col,Container} from "react-bootstrap";
+import {Link} from 'react-router-dom';
 import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 
@@ -8,9 +9,9 @@ function Banner() {
     <>
       <section className="bg_img">
           <Container fluid>
-            <Row className="banner_div">
+            <Row className="justify-content-center">
               <Col sm={7}>
-                <div className="bg_img_content ">
+                <div className=" bg_img_content ">
                   <h1>Shop Limited Edition</h1>
 
                   <p>
@@ -19,14 +20,10 @@ function Banner() {
                     saepe praesentium. Totam, ex recusandae!
                   </p>
 
-                  <div className="bg_img_conent_btns mrgn">
-                    <Button className="btn1 rounded-0" variant="dark">
-                      Find Out More
-                    </Button>
+                  <div className="mrt58">
+                  <Link to="#/" className="link_btn me-3">Read More</Link>
 
-                    <Button className="btn2 rounded-0" variant="Outline-dark">
-                      Shop Now!
-                    </Button>
+                  <Link to="#/" className="link_trans_btn">Shop Now!</Link>
                   </div>
                 </div>
               </Col>

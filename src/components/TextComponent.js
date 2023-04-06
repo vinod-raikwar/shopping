@@ -9,7 +9,7 @@ function TextComponent() {
   return (
     <>
       <section>
-        <div className="text_cmpnt_top_div">
+        <div className="div-bg p-tb-58">
           <Container>
             <Row>
               <Col md={4}>
@@ -24,7 +24,7 @@ function TextComponent() {
                       Beatae dicta laborum officiis nobis odio? Facere quo
                       reiciendis qui consequatur dolore.
                     </p>
-                    <Nav.Link href="#">Find Out More</Nav.Link>
+                    <Nav.Link href="#">Read More</Nav.Link>
                   </div>
                 </div>
               </Col>
@@ -40,7 +40,7 @@ function TextComponent() {
                       Beatae dicta laborum officiis nobis odio? Facere quo
                       reiciendis qui consequatur dolore.
                     </p>
-                    <Nav.Link href="#">Find Out More</Nav.Link>
+                    <Nav.Link href="#">Read More</Nav.Link>
                   </div>
                 </div>
               </Col>
@@ -56,7 +56,7 @@ function TextComponent() {
                       Beatae dicta laborum officiis nobis odio? Facere quo
                       reiciendis qui consequatur dolore.
                     </p>
-                    <Nav.Link href="#">Find Out More</Nav.Link>
+                    <Nav.Link href="#">Read More</Nav.Link>
                   </div>
                 </div>
               </Col>

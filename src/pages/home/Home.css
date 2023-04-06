@@ -1,72 +1,188 @@
 /* ********Common Css Start******** */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  outline: none;
+}
 
 @font-face {
-  font-family: "Poppins";
-  src: local("Poppins"),
-    url(../../assets/font/Poppins-Regular.ttf) format("truetype");
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../assets/font/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../assets/font/Poppins-Regular.ttf");
 }
 body {
-  font-family: "Poppins";
-  src: local("Poppins"),
-    url(../../assets/font/Poppins-Regular.ttf) format("truetype");
-}
-
-h6 {
-  color: #101010;
-  font-size: 15px;
-  line-height: 1.6em;
-  font-weight: 500;
-  font-family: Poppins, sans-serif;
-  letter-spacing: 0;
-  text-align: center;
-}
-
-h3 {
-  color: #101010;
-  font-size: 23px;
-  line-height: 1.4em;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  font-family: Poppins, sans-serif;
-  text-align: center;
-}
-
-h4 {
-  font-family: Poppins, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  color: #101010;
-  padding: 0px 16px 0px 0px;
-  padding: 0 0.8em 0 0;
-  position: relative;
-  display: -webkit-inline-box;
-  width: 100%;
-}
-
-h1 {
-  font-family: Poppins, sans-serif;
-  color: #ffffff;
-  line-height: 60px;
-  font-weight: 600;
-  letter-spacing: -1px;
-  text-transform: Capitalize;
-}
-
-.nav_brand {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* letter-spacing: 0.4px; */
+  font-family: "Poppins-Regular";
 }
 
-.inner_div {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-p {
-  font-family: Poppins, sans-serif;
-  font-size: 13px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
   letter-spacing: 0.5px;
+  font-family: "Poppins-Regular";
+}
+p {
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+a{
+  text-decoration: none !important;
+}
+.div-bg {
+  background-color: #f5f5f5;
+}
+.mrt58 {
+  margin-top: 58px;
+}
+.mrb58 {
+  margin-bottom: 58px;
+}
+
+.p-tb-58 {
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+
+.mrt30 {
+  margin-top: 30px;
+}
+.mrb30 {
+  margin-bottom: 30px;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+
+.pdtop50 {
+  padding-top: 50px;
+}
+.pdbottom50 {
+  padding-bottom: 50px;
+}
+
+.main_heading h6 {
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin: 0;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+.main_heading h3 {
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin: 0;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 13px;
+  padding: 16px 10px;
+}
+.social-icons a:hover {
+  color: #b7472a;
+}
+
+.link_btn {
+  text-decoration: none;
+  border: 1px solid #b7472a;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 14px;
+  padding: 14px 35px 14px 35px;
+  align-items: center;
+  background: linear-gradient(to right, #c4573b 50%, #b7472a 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.link_btn:hover {
+  background-position: left bottom;
+  color: #ffffff;
+}
+.link_trans_btn {
+  text-decoration: none;
+  border: 1px solid #b7472a;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 14px;
+  padding: 14px 35px 14px 35px;
+  align-items: center;
+  background: linear-gradient(to right, #c4573b 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+.link_trans_btn:hover{
+  background-position: left bottom;
+  color: #ffffff;
+}
+     
+
+.card {
+  margin: 30px 10px;
+  padding: 20px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 5px 20px rgb(183, 71, 42, 0.5);
+}
+
+.card-title {
+  min-height: 48px;
+}
+
+.card-body p {
+  margin-bottom: 0 !important;
+}
+
+.card-body {
+  padding-bottom: 0 !important;
+}
+.card_size {
+  text-align: left;
+  height: 60vh;
+}
+
+.card_img {
+  width: 100%;
+  max-height: 280px;
+}
+.card_category {
+  min-height: 37px;
+}
+.card_category a {
+  text-decoration: none;
+  padding-right: 1px;
+  color: #888787;
+  font-size: 12px;
+  font-family: Poppins, sans-serif;
+}
+.card_category a:hover {
+  color: #b7472a;
 }
 
 /* ********Common Css End******** */
@@ -80,18 +196,18 @@ p {
 
 .top-header-left {
   display: flex;
+  color: #ffffff;
 }
 
 .top-header-left a span {
-  font-size: 14px;
-  margin: 12px 8px 12px 4px;
+  font-size: 16px;
+  margin: 16px 8px 16px 4px;
 }
 
 .top-header-left a {
-  font-size: 12px;
-  color: #c0c0c0;
-  padding: 10px 22px 10px 0px;
-
+  font-size: 13px;
+  color: #ffffff;
+  padding: 16px 22px 16px 0px;
   font-weight: 900;
   letter-spacing: 0.5px;
 }
@@ -107,22 +223,13 @@ p {
 .vrtcl_line::after {
   content: "";
   width: 1px;
-  height: 15px;
+  height: 16px;
   background-color: #ffffff;
   position: absolute;
   margin: 0px 10px 0px 12px;
   margin-top: 3px;
 }
 
-.top-header-right-social-icons {
-  display: flex;
-  justify-content: end;
-}
-.top-header-right-social-icons a {
-  color: #ffffff;
-  font-size: 12px;
-  padding: 12px 10px;
-}
 /* ********Top_Header Css 
 End******** */
 
@@ -134,7 +241,7 @@ End******** */
 }
 
 .nav_anchor a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #252525;
   margin: 0px 12px;
@@ -171,15 +278,17 @@ End******** */
 .nav_icons span:hover {
   color: #b7472a;
 }
-
-.humburgur_menu {
-  font-size: 23px;
-  color: #252525;
+.nav_icons {
+  position: relative;
 }
-
-.humburgur_menu:hover {
-  color: #b7472a;
+.search_box {
+  position: absolute;
+  margin-top: 200px;
+  /* display: none; */
 }
+/* .search_input{
+  position: absolute;
+} */
 
 .cart_img {
   width: 100%;
@@ -200,7 +309,7 @@ End******** */
 }
 
 .accordion-button:not(.collapsed) {
-  color: hsl(0, 0%, 0%) !important;
+  color: #000000 !important;
 }
 /* ********Navbar Css End******** */
 
@@ -219,18 +328,14 @@ End******** */
   text-align: center;
 }
 
-.banner_div {
-  justify-content: center;
-}
-
 .bg_img_content h1 {
+  color: #ffffff;
   font-size: 58px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .bg_img_content p {
-  font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -238,73 +343,54 @@ End******** */
   color: #ffffff;
 }
 
-.bg_img_conent_btns .btn1 {
-  border: 1px solid #b7472a;
-  background-color: #b7472a;
-  color: #fff;
-  font-size: 12px;
-  margin: 5px;
-  padding: 1px 35px;
-  line-height: 47px;
-  text-transform: uppercase;
-  font-weight: 600;
-
-  background: linear-gradient(to right, #c4573b 50%, #b7472a 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all 0.5s ease-out;
-}
-
-.bg_img_conent_btns .btn2 {
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  font-size: 12px;
-  margin: 5px;
-  padding: 0 50px;
-  line-height: 47px;
-  text-transform: uppercase;
-  font-weight: 600;
-
-  background: linear-gradient(to right, #b7472a 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all 0.5s ease-out;
-}
-
-.bg_img_conent_btns .btn2:hover {
-  background-position: left bottom;
-  color: #ffffff;
-}
-
-.bg_img_conent_btns .btn1:hover {
-  background-position: left bottom;
-  border: 1px solid #b7472a;
-}
 /* **************Banner Css End***********/
+
+/* ************TextComponent Css Start*********** */
+
+.text_img_icons {
+  width: 70px;
+}
+
+.text_cmpnt_content {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.text_cmpnt_content p {
+  margin: 15px 0;
+}
+
+.text_cmpnt_content a {
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;  
+  color: #b7472a;
+}
+
+/* ************TextComponent Css End*********** */
+
+/* ************SellerCard Css Start*********** */
+
+
+
+
+/* ************SellerCard Css 
+End*********** */
 
 /* ************Carousel Css Start*********** */
 
-.carousel_top_div {
-  padding-top: 57px;
-  padding-bottom: 30px;
-}
-.carousel_div {
-  margin-top: 30px;
-  padding: 0px 30px;
-}
 
 .carousel_content_img {
   position: relative;
   background-image: url(https://templatekit.jegtheme.com/textilery/wp-content/uploads/sites/122/2021/07/bg.jpg);
   width: 100%;
   height: 60vh;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
 }
+
 .carousel-control-prev-icon {
   opacity: 0;
 }
@@ -328,14 +414,12 @@ End******** */
 }
 
 .carousel_content h1 {
-  font-family: Poppins, sans-serif;
   color: #ffffff;
   font-size: 58px;
   line-height: 60px;
   font-weight: 600;
   letter-spacing: -1px;
   text-transform: Capitalize;
-  text-align: start;
 }
 
 .carousel_content p {
@@ -344,32 +428,11 @@ End******** */
   font-weight: 500;
 }
 
-.carousel_link_div {
-  margin-top: 60px;
-  text-align: start;
-}
-
-.carousel_link {
-  width: 250px;
-  font-size: 12px;
-  border: 1px solid #ffffff80;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 40px;
-}
-
-.carousel_link:hover {
-  background-color: black;
-}
 
 /* ************Carousel Css End*********** */
 
 /* ************StorieCard Css Start*********** */
-.storie_cards_top_div {
-  background-color: #f4f4f4;
-  padding-top: 57px;
-  padding-bottom: 30px;
-}
+
 
 .storie_card_title {
   min-height: 48px;
@@ -379,8 +442,7 @@ End******** */
 }
 
 .card_link {
-  font-size: 13px;
-  font-family: Poppins, sans-serif;
+  font-size: 14px;
   font-weight: 600;
   color: #101010;
 }
@@ -402,10 +464,9 @@ End******** */
 }
 
 .card_date {
-  font-size: 13px;
-  margin-top: 5px;
+  font-size: 14px;
+  padding-bottom: 10px;
   color: #b7472a;
-
   font-family: Poppins, sans-serif;
   font-weight: 500;
 }
@@ -422,96 +483,11 @@ End******** */
 
 /* ************StorieCard Css End*********** */
 
-/* ************SellerCard Css Start*********** */
 
-.seller_top_div {
-  padding-top: 57px;
-}
-.seller_cards {
-  margin-top: 30px;
-}
-
-.card-title {
-  min-height: 48px;
-}
-
-.card-body p {
-  margin-bottom: 0 !important;
-}
-
-.card-body {
-  padding-bottom: 0 !important;
-}
-.card_size {
-  text-align: left;
-  height: 60vh;
-}
-
-.card_img {
-  width: 100%;
-  max-height: 280px;
-}
-.card_category {
-  min-height: 37px;
-}
-.card_category a {
-  text-decoration: none;
-  padding-right: 1px;
-  color: #888787;
-  font-size: 12px;
-  font-family: Poppins, sans-serif;
-}
-.card_category a:hover {
-  color: #b7472a;
-}
-/* .card-img-top {
-  object-fit: cover;
-  height: auto;
-} */
-
-/* ************SellerCard Css 
-End*********** */
-
-/* ************TextComponent Css Start*********** */
-
-.text_img_icons {
-  width: 70px;
-}
-
-.text_cmpnt_top_div {
-  padding-top: 58px;
-  padding-bottom: 57px;
-  background-color: #f5f5f5;
-}
-
-.text_cmpnt_content {
-  box-sizing: border-box;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%;
-}
-
-.text_cmpnt_content p {
-  margin: 15px 0;
-}
-
-.text_cmpnt_content a {
-  font-family: Poppins, sans-serif;
-  font-size: 12px;
-  line-height: 1.2em;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #b7472a;
-}
-
-/* ************TextComponent Css End*********** */
 
 /* ************Footer Css Start*********** */
 
-.ftr_logo {
-  color: #ffffff;
-  text-align: start;
-}
+
 .footer_bg {
   display: block;
   background-color: #191919;
@@ -520,18 +496,17 @@ End*********** */
   background-size: cover;
   color: #fff;
   text-align: start;
-  padding: 70px 80px 30px 80px;
+  padding: 70px 80px 17px 80px;
 }
 
-.footer_content {
-  margin-top: 30px;
 
+.footer_address > p {
+  letter-spacing: 0.5px;
+  line-height: 25px;
 }
 
-.footer_address {
-  line-height: 30px;
-}
-.footer_address span{
+.footer_address span {
+  line-height: 20px;
   font-size: 20px;
   color: #b7472a;
   margin-right: 10px;
@@ -543,17 +518,12 @@ End*********** */
 .footer_social_icons a {
   padding: 0px 15px 0px 0px;
   font-size: 25px;
-  color: #ffffff;
 }
 
-.footer_social_icons a:hover {
-  color: #b7472a;
-}
 
-.footer_date {
+.footer_date i {
   font-size: 13px;
   color: #b7472a;
-  font-family: Poppins, sans-serif;
   font-weight: 500;
 }
 
@@ -562,21 +532,13 @@ End*********** */
   line-height: 28px;
 }
 
-.footer_para_link {
-  margin: 0px 0px 6px 0px;
-  font-size: 15px;
+.footer_page_link {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.footer_content ul {
-  display: flex;
-  padding: 0;
-}
-.footer_content ul li {
-  list-style: none;
-  margin: 0px 8px 0px 0px;
-}
-.footer_content ul li a img {
-  width: 60px;
+.footer_page_link a {
+  padding: 0 !important;
 }
 
 .ftr_email input {
@@ -587,7 +549,7 @@ End*********** */
 ::placeholder {
   color: #fff;
   font-size: 13px;
-  padding-left: 15px;
+  padding-left: 5px;
 }
 
 .ftr_email_div {
@@ -596,7 +558,6 @@ End*********** */
 
 .ftr_email {
   color: white;
-  padding-left: 20px;
   width: 100%;
   font-size: 13px;
   line-height: 40px;
@@ -630,6 +591,7 @@ End*********** */
 .ftr_subscribe {
   font-size: 13px;
   padding-bottom: 20px;
+  line-height: 25px;
 }
 
 .footer_page_link a {
@@ -638,10 +600,7 @@ End*********** */
   color: #ffffff;
   padding: 0px 0px 16px 0px;
 }
-.page_links h2{
- /* text-align: center; */
- justify-content: center;
-}
+
 .footer_page_link a:hover {
   color: #b7472a;
 }
@@ -649,7 +608,7 @@ End*********** */
 .footer_bottom {
   margin: 0px auto;
   background-color: #191919;
-  border-top: 1px solid #c0c0c0;
+  border-top: 1px solid #5c5959;
 }
 
 .footer_bottom_left {
@@ -658,7 +617,9 @@ End*********** */
   text-align: start;
   padding-top: 14px;
 }
-
+.footer_bottom_left p span {
+  padding-right: 5px;
+}
 .footer_bottom_right {
   margin-right: 80px;
   display: flex;
@@ -668,7 +629,10 @@ End*********** */
 .ftr_debit_cards img {
   width: 50px;
 }
-
+.media-heading {
+  color: #ffffff;
+  text-align: start;
+}
 /* ************Footer Css End*********** */
 
 /* ************IncDecCounter Css Start*********** */
@@ -782,7 +746,7 @@ End*********** */
   justify-content: center;
   align-content: center;
 }
-.timer_title{
+.timer_title {
   margin-bottom: 40px;
 }
 .timer_title h2 {
@@ -819,7 +783,7 @@ End*********** */
   font-weight: 700;
   color: #e7ab3c;
 }
-.timer_content .product_price  span {
+.timer_content .product_price span {
   font-size: 16px;
   font-weight: 400;
   color: #636363;
@@ -837,7 +801,7 @@ End*********** */
   color: #e7ab3c;
   width: 70px;
 }
-.countdown_timer .cd_item  span{
+.countdown_timer .cd_item span {
   font-size: 36px;
 }
 .countdown_timer .cd_item p {
@@ -846,11 +810,11 @@ End*********** */
   color: #6e6e6e;
 }
 
-.timer_btn{
+.timer_btn {
   border: 1px solid #e7ab3c;
   background-color: #e7ab3c;
-  color: #ffffff;text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
   padding: 15px 25px;
 }
 /* ************TimerBag Css End*********** */
-
