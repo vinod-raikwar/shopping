@@ -1,20 +1,5 @@
 /* ************Blog Page Css Start*********** */
 
-.card {
-  margin: 30px 10px;
-  padding: 20px 15px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
-}
-
-.card:hover {
-  box-shadow: 0 5px 20px rgb(183, 71, 42, 0.5);
-}
-
-.blog_bg_color {
-  background-color: #f1efef;
-}
-
 .blog_bg_color h6 {
   line-height: 80px;
   margin: 0;
@@ -26,7 +11,6 @@
   position: relative;
   display: table-cell;
   height: 100%;
-  width: 100%;
   vertical-align: middle;
   text-align: left;
 }
@@ -69,27 +53,7 @@
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1148px) {
-  .blogs {
-    padding: 30px;
-  }
-  .blogs h3 {
-    font-size: 20px;
-  }
-}
 
-/* ************Blog Page Css End*********** */
-
-/* ======BLOG PAGE CSS START======== */
-.blog-page-section {
-  margin-top: 70px;
-}
-
-
-.h-blog-box {
-  box-shadow: 0px 0px 30px 0px rgb(0 33 85 / 10%);
-
-}
 .h-blog-box {
   margin-bottom: 30px;
   overflow: hidden;
@@ -130,7 +94,7 @@
   font-weight: bold;
 }
 .h-blog-box:hover .h-blog-box-content {
-  color: #911439;
+  color: #b7472a;
   opacity: 1;
   visibility: visible;
 }
@@ -142,7 +106,7 @@
   font-size: 12px;
   font-weight: bold;
   display: inline-block;
-  color: #911439;
+  color: #b7472a;
   padding: 0px 0px;
   transition: all 0.3s ease;
 }
@@ -160,7 +124,7 @@ h3 {
   margin-right: 10px;
 }
 .blog-info span {
-  color: #911439;
+  color: #b7472a;
   font-weight: bold;
 }
 .blog-info svg {
@@ -174,13 +138,11 @@ h3 {
   margin-top: 10px;
 }
 .blog-btn :hover {
-  color: #911439;
+  color: #b7472a;
 }
+/* ************BLOCK CSS END*********** */
 
-/* =====BLOG CSS END===== */
-
-
-/* =====BLOG SIDEBAR CSS START===== */
+/* ******BLOG SIDEBAR CSS START******** */
 .blog-page-sidebar .ss-box {
   background: #fff;
   border: none;
@@ -215,10 +177,9 @@ h3 {
   display: inline;
 }
 .blog-page-sidebar .side-category span {
-  /* display: inline-block; */
   width: 20px;
   height: 20px;
-  background: #911439;
+  background: #b7472a;
   line-height: 20px;
   color: #fff;
   font-size: 12px;
@@ -266,7 +227,7 @@ h3 {
   padding: 7px 10px;
   border-radius: 0px;
   text-transform: capitalize;
-  border-color: #911439;
+  border-color: #b7472a;
   background: transparent;
   height: 35px;
   font-size: 12px;
@@ -274,16 +235,16 @@ h3 {
 
 .blog-page-sidebar input::placeholder {
   text-transform: capitalize;
-  color: #911439;
+  color: #b7472a;
 }
 .blog-page-sidebar input:hover {
   background: transparent;
-  border-color: #911439;
+  border-color: #b7472a;
   box-shadow: unset;
 }
 .blog-page-sidebar input:focus {
   background: transparent;
-  border-color: #911439;
+  border-color: #b7472a;
   box-shadow: unset;
 }
 
@@ -294,24 +255,23 @@ h3 {
   font-size: 12px;
   text-transform: uppercase;
   color: #fff;
-  background: #992749;
+  background: #b7472a;
   border-radius: 0px;
-  border: 1px solid #992749;
+  border: 1px solid #b7472a;
   height: 35px;
   padding: 6px 20px;
   transition: all 0.5s;
 }
 .blog-page-sidebar button:hover {
-  background: #911439;
-  border-color: #911439;
+  background: #b7472a;
+  border-color: #b7472a;
 }
 
 .blog-page-sidebar a {
-  background: #aa9975;
+  background: #b7472a;
   padding: 0;
   color: #fff !important;
   height: 35px;
-  /* width: 35px; */
   width: 70%;
   padding: 0 10px;
   margin: 0px auto;
@@ -321,24 +281,7 @@ h3 {
   border-radius: 100px;
   font-size: 12px;
 }
-/* =====BLOG SIDEBAR CSS END===== */
+/* **********BLOG SIDEBAR CSS END********/
+/* ************Blog Page Css End*********** */
 
-.pagination-box {
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-.pagination-box ul {
-  justify-content: center;
-}
-.page-link {
-  color: #000;
-}
-.pagination-box .active .page-link {
-  background: #911439;
-  border-color: #911439;
-  color: #fff;
-}
-.pagination-box .visually-hidden {
-  display: none;
-}
 

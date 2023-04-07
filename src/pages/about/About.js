@@ -27,14 +27,13 @@ import ScrollTrigger from "react-scroll-trigger";
 function About() {
   return (
     <>
-      <section>
+      <section className="div-bg">
         {/* ***********SLIDE SECTION START*************** */}
-        <div className="contact_bg_img">
-          <div className="layer">
+        <div className="banner_bg_img">
             <Container>
               <Row>
                 <Col>
-                  <div className="content">
+                  <div className="banner_content">
                     <h2>About Us</h2>
                     <div className="breadcrumb">
                       <span>
@@ -48,20 +47,19 @@ function About() {
                 </Col>
               </Row>
             </Container>
-          </div>
         </div>
         {/* ***********SLIDE SECTION END*************** */}
 
         {/* ***********PROFILE SECTION START*************** */}
-        <div className="about-value-section mt-5 mb-5">
+        <div className=" mrt58">
           <Container>
-            <div className="about-value-main">
+            <div className="about-title">
               <h2>What we value</h2>
 
               <Row>
                 <Col md={7}>
-                  <div className="about-value-box">
-                    <div className="main_heading">
+                  <div className="">
+                    <div className="">
                       <p>
                         Lorem Ipsum is simply dummy text of the Lorem Ipsum is
                         simply dummy text of the printing and typesetting
@@ -95,7 +93,7 @@ function About() {
                         alt="about Img"
                       />
                     </div>
-                    <div className="main_heading mt-4">
+                    <div className="value-aside mt-4">
                       <p>
                         Lorem Ipsum is simply dummy text of the Lorem Ipsum is
                         simply dummy text of the printing and typesetting
@@ -115,7 +113,7 @@ function About() {
         {/* ***********PROFILE SECTION END*************** */}
 
         {/* ***********COUNT SECTION START*************** */}
-        <div className="section counts">
+        <div className="mrt58 ptb-30">
           <Container>
             <Row g={0}>
               <Col xs={12} sm={6} md={3}>
@@ -206,10 +204,10 @@ function About() {
         {/* ***********COUNT SECTION END*************** */}
 
         {/* ***********PORTFOLIO SECTION START*************** */}
-        <div className="section portfolio_bg">
+        <div className="mrt58">
           <Container>
-            <div className="section_title">
-              <h2>Our Portfolio</h2>
+            <div className="main_heading pb30">
+              <h3>Our Portfolio</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
                 distinctio nobis veniam temporibus facilis recusandae? Sunt
@@ -287,9 +285,9 @@ function About() {
         {/* ***********PORTFOLIO SECTION END*************** */}
 
         {/* ***********TEAM SECTION START*************** */}
-        <div className="section">
+        <div className="mrt58">
           <Container>
-            <div className="section_title">
+            <div className="main_heading ptb-30">
               <h2>Our Team</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,

@@ -1,29 +1,170 @@
-/* **********COMMON CSS START********* */
-.section {
-  background: #fff;
-  padding: 60px 0;
+
+
+/* ***********COUNTER SECTION CSS START*************** */
+
+.count_box {
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+.count_box .icon {
+  display: block;
+  font-size: 34px;
+  color: #b7472a;
+  float: left;
+  line-height: 0;
 }
 
-.section_title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.section_title h2 {
-  font-size: 32px;
+.count_box .counter {
+  font-size: 40px;
+  line-height: 24px;
+  display: block;
+  display: flex;
   font-weight: 700;
+  color: #58716d;
+  margin-left: 50px;
+}
+
+.count_box p {
+  color: #58716d;
+  padding: 30px 0 0 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.count_box a {
+  font-weight: 600;
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+  color: #7c9995;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in-out 0.3s;
+}
+
+/* ***********COUNTER SECTION CSS END*************** */
+
+/* ***********PORTFOLIO SECTION CSS START*************** */
+
+.portfolio_filters {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio_filters a:hover,
+.portfolio_filters a.filter-active {
+  color: #b7472a;
+}
+
+.portfolio_filters a {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  color: #4b605c;
+  color: #334240;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
-.section_title p {
-  margin-bottom: 0;
-  color: #5f7c78;
+.portfolio_wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
-/* **********COMMON CSS END********* */
+.portfolio_wrap:hover .portfolio_info {
+  opacity: 1;
+  background: rgba(88, 113, 109, 0.3);
+  transition: all ease-in-out 0.3s;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio_wrap .portfolio_info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+}
+.portfolio_wrap .portfolio_info h4 {
+  font-size: 20px;
+  color: #b7472a;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio_wrap .portfolio_info p {
+  color: #b7472a;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.portfolio_wrap .portfolio_links {
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio_links a {
+  color: #b7472a;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* ***********PORTFOLIO SECTION CSS END*************** */
+
+
+
+/* ***********PROFILE SECTION CSS START*************** */
+.about-title h2 {
+  font-size: 44px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0;
+  margin: 10px 0px;
+}
+.value-aside h6 {
+  justify-content: start;
+}
+
+.value-aside span {
+  border-left: 2px solid #b7472a;
+  text-transform: capitalize;
+  line-height: 1;
+  padding: 0 0 0 10px;
+  color: #b7472a;
+  font-weight: bold;
+}
+
+
+/* ***********PROFILE SECTION CSS END*************** */
 
 /* **********TEAM SECTION CSS START********* */
 
@@ -34,10 +175,7 @@
   position: relative;
   overflow: hidden;
 }
-.img-fluid {
-  width: 100%;
-  height: auto;
-}
+
 .member img {
   vertical-align: middle;
 }
@@ -81,13 +219,13 @@
   justify-content: center;
   margin-bottom: 2px;
   font-size: 18px;
-  color: #fff;
+  color: #b7472a;
 }
 .member .member_info_content span {
   font-style: italic;
   display: block;
   font-size: 13px;
-  color: #fff;
+  color: #b7472a;
 }
 .member:hover .social {
   bottom: 0;
@@ -106,178 +244,10 @@
 
 .member .social a {
   transition: color 0.3s;
-  color: #fff;
+  color: #b7472a;
   margin: 0 10px;
   display: inline-block;
   font-size: 18px;
   margin: 0 8px;
 }
 /* **********TEAM SECTION CSS END********* */
-
-/* ***********PORTFOLIO SECTION CSS START*************** */
-.portfolio_bg {
-  background-color: #f2f5f4;
-}
-.portfolio_filters {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0 auto 35px auto;
-  list-style: none;
-  text-align: center;
-  background: #fff;
-  border-radius: 50px;
-  padding: 2px 15px;
-}
-
-.portfolio_filters a:hover,
-.portfolio_filters a.filter-active {
-  color: #b7472a;
-}
-
-.portfolio_filters a {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 15px 8px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #334240;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio_wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.portfolio_wrap:hover .portfolio_info {
-  opacity: 1;
-  background: rgba(88, 113, 109, 0.6);
-  transition: all ease-in-out 0.3s;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.portfolio_wrap .portfolio_info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-}
-.portfolio_wrap .portfolio_info h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-}
-
-.portfolio_wrap .portfolio_info p {
-  color: #ffffff;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.portfolio_wrap .portfolio_links {
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio_links a {
-  color: #fff;
-  font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-  display: inline-block;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* ***********PORTFOLIO SECTION CSS END*************** */
-
-/* ***********COUNTER SECTION CSS START*************** */
-.counts {
-  background-color: #f2f5f4;
-}
-.count_box {
-  background-color: #ffffff;
-  padding: 30px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-}
-.counts .count_box .icon {
-  display: block;
-  font-size: 34px;
-  color: #b7472a;
-  float: left;
-  line-height: 0;
-}
-
-.counts .count_box .counter {
-  font-size: 40px;
-  line-height: 24px;
-  display: block;
-  display: flex;
-  font-weight: 700;
-  color: #58716d;
-  margin-left: 50px;
-}
-
-.counts .count_box p {
-  color: #58716d;
-  padding: 30px 0 0 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.counts .count_box a {
-  font-weight: 600;
-  display: block;
-  text-decoration: none;
-  margin-top: 20px;
-  color: #7c9995;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-
-/* ***********COUNTER SECTION CSS END*************** */
-
-/* ***********PROFILE SECTION CSS START*************** */
- 
-  .main_heading span {
-    border-left: 2px solid #b7472a;
-    text-transform: capitalize;
-    line-height: 1;
-    padding: 0 0 0 10px;
-    color: #b7472a;
-    font-weight: bold;
-  }
-  .main_heading h2 {
-    font-size: 44px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    margin: 0;
-    margin: 10px 0px;
-  }
-  .main_heading h6 {
-  text-align: start;
-  }
-
-/* ***********PROFILE SECTION CSS END*************** */

@@ -80,8 +80,8 @@ function Footer() {
                           />{" "}
                         </Link>
                       </div>
-                      <div className="media-body ps-3">
-                        <h6 className="media-heading">John Doe </h6>
+                      <div className="media-body  ps-3">
+                        <h6 className="media-heading d-flex justify-content-start">John Doe </h6>
                         <p className="footer_date">
                           <Link to="#/">
                             <i>Posted onFebruary 12, 2016 </i>
@@ -103,7 +103,7 @@ function Footer() {
                         </Link>
                       </div>
                       <div className="media-body ps-3">
-                        <h6 className="media-heading">John Doe </h6>
+                        <h6 className="media-heading d-flex justify-content-start">John Doe </h6>
                         <p className="footer_date">
                           <Link to="#/">
                             <i>Posted onFebruary 12, 2016 </i>
@@ -125,7 +125,7 @@ function Footer() {
                         </Link>
                       </div>
                       <div className="media-body ps-3">
-                        <h6 className="media-heading">John Doe </h6>
+                        <h6 className="media-heading d-flex justify-content-start">John Doe </h6>
                         <p className="footer_date">
                           <Link to="#/">
                             <i>Posted onFebruary 12, 2016 </i>
@@ -201,10 +201,9 @@ function Footer() {
                 </div>
               </Col>
             </Row>
-            <hr />
             <Row>
               <Col xs={12}>
-                <div className="footer_page_link">
+                <div className="footer_page_link mrt58 mrb30">
                   <NavLink to="/">Home</NavLink>
                   <NavLink to="/about">About Us</NavLink>
                   <NavLink to="/product">Product</NavLink>

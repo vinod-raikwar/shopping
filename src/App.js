@@ -7,7 +7,6 @@ import Contact from "./pages/contact/Contact.js";
 import Product from "./pages/product/Product.js";
 import Services from "./pages/service/Services.js";
 import Blog from "./pages/blog/Blog.js";
-import Login from "./pages/login/Login.js";
 import About from "./pages/about/About.js";
 import Footer from "./components/Footer.js";
 import "animate.css";
@@ -26,7 +25,6 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -5,7 +5,6 @@ import TextComponent from "../../components/TextComponent";
 import SellerCards from "../../components/SellerCards";
 import Carousels from "../../components/Carousels";
 import StorieCards from "../../components/StorieCards";
-// import TimerBag from "../../components/TimerBag";
 
 function Home() {
   return (
@@ -13,7 +12,6 @@ function Home() {
       <Banner />
       <TextComponent />
       <SellerCards />
-      {/* <TimerBag /> */}
       <Carousels />
       <StorieCards />
     </>

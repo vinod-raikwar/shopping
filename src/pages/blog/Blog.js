@@ -1,5 +1,6 @@
 import React from "react";
 import "./Blog.css";
+import "../../assets/css/Responsive.css";
 import {
   Container,
   Row,
@@ -42,23 +43,44 @@ function Blog() {
 
   return (
     <>
-      <div className="">
+       <div className="banner_bg_img">
+            <Container>
+              <Row>
+                <Col>
+                  <div className="banner_content">
+                    <h2>Blog</h2>
+                    <div className="breadcrumb">
+                      <span>
+                        <Link title="Homepage" to="/home">
+                          Home
+                        </Link>
+                      </span>
+                      <span>Blog</span>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+        </div>
+      <div className="div-bg">
         <div className="blog_bg_color">
           <Container>
             <Row>
               <Col sm={6}>
-                <div className="blog_bg_color">
+                <div>
                   <h6>Blog Chequered</h6>
                 </div>
               </Col>
               <Col sm={6}>
-                <div className="blog_bg_color">
+                <div>
                   <h6>Suprema / Blog Chequered</h6>
                 </div>
               </Col>
             </Row>
           </Container>
+        </div>
 
+        <div>
           <Container fluid>
             <Row>
               <Col xs={12} sm={6} lg={3} className="p-0">
@@ -135,11 +157,11 @@ function Blog() {
           </Container>
         </div>
 
-        {/* ====BLOG SECTION START===== */}
-        <div className="blog-page-section">
+        {/* ********BLOG SECTION START********/}
+        <div className="mrt58">
           <Container>
             <Row>
-              {/* =======COLUMN 8 BLOG START===== */}
+              {/* *******COLUMN 8 BLOG START**********/}
 
               <Col xs={12} md={8}>
                 <div className="blog-page-full">
@@ -203,7 +225,7 @@ function Blog() {
                       </div>
                     </div>
                   </div>
-                  {/* =====BLOG BOX END===== */}
+                  {/* *******BLOG BOX END**** */}
                   <div
                     className="h-blog-box"
                     data-aos="fade-down"
@@ -264,7 +286,7 @@ function Blog() {
                     </div>
                   </div>
 
-                  {/* =====BLOG BOX END===== */}
+                  {/* **********BLOG BOX END******* */}
                   <div
                     className="h-blog-box"
                     data-aos="fade-down"
@@ -324,13 +346,13 @@ function Blog() {
                       </div>
                     </div>
 
-                    {/* =====BLOG BOX END===== */}
+                    {/* ******BLOG BOX END*****/}
                   </div>
                 </div>
               </Col>
-              {/* =======COLUMN 8 BLOG END===== */}
+              {/* **********COLUMN 8 BLOG END********** */}
 
-              {/* =======COLUMN 4 SIDEBAR START===== */}
+              {/* **********COLUMN 4 SIDEBAR START********** */}
 
               <Col xs={12} md={4}>
                 <div className="blog-page-sidebar">
@@ -350,7 +372,7 @@ function Blog() {
                       </Form>
                     </Nav>
                   </div>
-                  {/* ======BOX END====== */}
+                  {/* *********BOX END******** */}
                   <div className="side-category ss-box">
                     <h2>Categories</h2>
                     <ul>
@@ -386,7 +408,7 @@ function Blog() {
                       </li>
                     </ul>
                   </div>
-                  {/* ======BOX END====== */}
+                  {/* ***********BOX END********* */}
                   <div className="side-recent ss-box">
                     <h2>Recent Post</h2>
                     <div className="media">
@@ -418,7 +440,7 @@ function Blog() {
                       </div>
                     </div>
                   </div>
-                  {/* ==========BOX END======= */}
+                  {/* ***********BOX END**********/}
                   <div className="side-category ss-box">
                     <h2>Follow Us</h2>
                     <ul>

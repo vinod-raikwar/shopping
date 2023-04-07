@@ -8,12 +8,10 @@ import {
   Col,
   Accordion,
   Form,
-  Button,
 } from "react-bootstrap";
 // import logo from "../assets/images/nav-logo-dark.png";
 import IncDecCounter from "../components/IncDecCounter.js";
-import { VscSearch } from "react-icons/vsc";
-import { BsHandbag } from "react-icons/bs";
+import { BsHandbag,BsSearch } from "react-icons/bs";
 import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 import { NavLink } from "react-router-dom";
@@ -22,17 +20,18 @@ import cart from "../assets/images/cart-product.jpg";
 
 function NavigationBar({ name, ...props }) {
   const [show, setShow] = useState(false);
-  // const [search, setSearch] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  // const searchClose = () => setSearch(false);
-  // const searchShow = () => setSearch(true);
-  const searchShow = (e) => {
-    e.preventDefault();
-    
-  }
+  const [searchIsOpen, setSearchIsOpen] = useState(false);
+  const search = () => {
+    if (searchIsOpen) {
+      setSearchIsOpen(true);
+    } else {
+      setSearchIsOpen(false);
+    }
+  };
 
   return (
     <>
@@ -50,35 +49,34 @@ function NavigationBar({ name, ...props }) {
                 navbarScroll
               >
                 <NavLink to="/">Home</NavLink>
+                <NavLink to="about">About Us</NavLink>
                 <NavLink to="product">Products</NavLink>
                 <NavLink to="services">Services</NavLink>
                 <NavLink to="blog">Blog</NavLink>
-                <NavLink to="about">About Us</NavLink>
                 <NavLink to="contact">Contact Us</NavLink>
-                <NavLink to="login">Login</NavLink>
               </Nav>
-
-              <div className="nav_icons">
-                <span onClick={searchShow}>
-                  <VscSearch />
+              
+              
+              <Form className="d-flex position-relative">
+                <Form.Control
+                  type="search"
+                  placeholder="Search"
+                  className="me-2"
+                  id="serchinput"
+                  aria-label="Search"
+                />
+                <span onClick={search} className="search_icon">
+                  <BsSearch/>
                 </span>
+              </Form>
 
+              <div className="nav_icons d-flex">
                 <span onClick={handleShow}>
                   <BsHandbag />
                 </span>
               </div>
 
-              <div className="search_box">
-                <Form className="d-flex" >
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success">Search</Button>
-                </Form>
-              </div>
+              <div className="search_box"></div>
 
               <Offcanvas
                 placement="end"

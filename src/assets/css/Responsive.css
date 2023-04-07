@@ -133,6 +133,25 @@
 }
 
 /* ************Storie Responsive Css End************ */
+
+/* ************Trending Responsive Css Start************ */
+
+
+/* ************Trending Responsive Css End************ */
+
+
+/* ************Blog Responsive Css Start************ */
+@media screen and (min-width: 992px) and (max-width: 1148px) {
+  .blogs {
+    padding: 30px;
+  }
+  .blogs h3 {
+    font-size: 20px;
+  }
+}
+ 
+
+/* ************Blog Responsive Css End************ */
 /* ************Footer Responsive Css Start************ */
 
 @media screen and (min-width: 320px) and (max-width: 1250px) {
@@ -162,37 +181,5 @@
 
 /* ************Footer Responsive Css End************ */
 
-/* ************Trending Responsive Css Start************ */
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .media-heading{
-    font-size: 12px;
-    text-align: start;
-  }
-  .media-object{
-    width: 50px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .trending_content_div{
-    padding: 30px 30px;
-  }
-}
-
-/* ************Trending Responsive Css End************ */
-
-
-/* ************ShippingBar Responsive Css Start************ */
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .shipping_banner_heading {
-    font-size: 23px;
-    padding-bottom: 20px;
-}
-  .shipping_banner_link_div a {
-    margin: 0px 50px 0px 50px;
-}
-}
-
-/* ************ShippingBar Responsive Css End************ */
 
 

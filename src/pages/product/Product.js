@@ -29,13 +29,12 @@ import a4 from "../../assets/images/product/arival4.webp";
 function Product() {
   return (
     <>
-      <section className="product">
-        <div className="contact_bg_img">
-          <div className="layer">
+      <section>
+        <div className="banner_bg_img">
             <Container>
               <Row>
                 <Col>
-                  <div className="content">
+                  <div className="banner_content">
                     <h2>Products</h2>
                     <div className="breadcrumb">
                       <span>
@@ -49,14 +48,13 @@ function Product() {
                 </Col>
               </Row>
             </Container>
-          </div>
         </div>
-
-        <div className="products_cart mt-5">
+       {/* ***********Shop The New Collection Start*********** */}
+        <div className="div-bg pb30">
           <Container>
             <Row>
               <Col>
-                <div className="seller_top_heading">
+                <div className="main_heading mrt30">
                   <h6>New Products</h6>
 
                   <h3>Shop The New Collection</h3>
@@ -66,7 +64,7 @@ function Product() {
 
             <Row>
               <Col xs={12} sm={6} md={3} className="p-0">
-                <div className="seller_cards ">
+                <div className="mrt30">
                   <Card className="card_size border-0 border-bottom">
                     <Link to="#shoe">
                       <Card.Img
@@ -93,7 +91,7 @@ function Product() {
               </Col>
 
               <Col xs={12} sm={6} md={3} className="p-0">
-                <div className="seller_cards">
+                <div className="mrt30">
                   <Card className="card_size border-0 border-bottom">
                     <Link to="#bag">
                       <Card.Img
@@ -277,36 +275,31 @@ function Product() {
                 </div>
               </Col>
             </Row>
-            <div className="pagination mt-5">
+            <div className="pagination-box">
               <Pagination>
-                <Pagination.First />
                 <Pagination.Prev />
                 <Pagination.Item>{1}</Pagination.Item>
-                <Pagination.Ellipsis />
-
-                <Pagination.Item>{10}</Pagination.Item>
-                <Pagination.Item>{11}</Pagination.Item>
-                <Pagination.Item active>{12}</Pagination.Item>
+                <Pagination.Item>{2}</Pagination.Item>
+                <Pagination.Item>{3}</Pagination.Item>
+                <Pagination.Item active>{10}</Pagination.Item>
                 <Pagination.Item>{13}</Pagination.Item>
-                <Pagination.Item disabled>{14}</Pagination.Item>
-
-                <Pagination.Ellipsis />
                 <Pagination.Item>{20}</Pagination.Item>
                 <Pagination.Next />
-                <Pagination.Last />
               </Pagination>
             </div>
           </Container>
         </div>
+{/* ***********Shop The New Collection End*********** */}
 
-        <div className="mt-5">
+        {/* ***********Women Collection Start*********** */}   
+        <div className="mrt58">
           <Container>
             <Row>
               <Col xs={12}>
-                <div className="seller_top_heading">
+                <div className="main_heading">
                   <h6>New Products</h6>
 
-                  <h3>Shop By Collection</h3>
+                  <h3>Women Collection</h3>
                 </div>
               </Col>
             </Row>
@@ -314,7 +307,7 @@ function Product() {
               <div className="d-flex">
                 <Col xs={12} sm={6} md={3} className="p-0">
                   <div className="hover_pics card">
-                    <img src={m1} className="grow_pics" alt="one" />
+                    <img src={m1} className="grow_pic" alt="one" />
 
                     <div className="hover_pics_title">
                       <span className="text-center d-block pb-3">
@@ -325,7 +318,7 @@ function Product() {
                 </Col>
                 <Col xs={12} sm={6} md={3} className="p-0">
                   <div className="hover_pics  card">
-                    <img src={m2} className="grow_pics" alt="two" />
+                    <img src={m2} className="grow_pic" alt="two" />
 
                     <div className="hover_pics_title">
                       <span className=" text-center d-block pb-3">
@@ -336,7 +329,7 @@ function Product() {
                 </Col>
                 <Col xs={12} sm={6} md={3} className="p-0">
                   <div className="hover_pics  card">
-                    <img src={m3} className="grow_pics" alt="three" />
+                    <img src={m3} className="grow_pic" alt="three" />
                     <div className="hover_pics_title">
                       <span className="text-center d-block pb-3">
                         Straight Kurta
@@ -346,7 +339,7 @@ function Product() {
                 </Col>
                 <Col xs={12} sm={6} md={3} className="p-0">
                   <div className="hover_pics  card">
-                    <img src={m4} className="grow_pics" alt="four" />
+                    <img src={m4} className="grow_pic" alt="four" />
                     <div className="hover_pics_title">
                       <span className="text-center d-block pb-3">
                         Batik Print Kurta Set
@@ -359,15 +352,17 @@ function Product() {
           </Container>
         </div>
 
+           {/* ***********Women Collection End*********** */} 
+
         {/* *********Arival Section Start********** */}
 
-        <div className="mt-5 pb-5">
+        <div className="mrt58">
           <Row>
             <Col xs={12}>
-              <div className="seller_top_heading">
+              <div className="main_heading">
                 <h6>Latest Products</h6>
 
-                <h3>New Arivals</h3>
+                <h3>New Arivals For Women</h3>
               </div>
             </Col>
           </Row>
@@ -376,12 +371,12 @@ function Product() {
               <Col xs={12} sm={6} md={3} className="p-0">
                 <div className="card">
                   <div className="new_arival">
-                    <img src={a1} className="arival_pic" alt="one" />
+                    <img src={a1} className="grow_pic" alt="one" />
                     {/* <img src={ah1} className="img-top" alt="Card Front"/> */}
 
                     <div className="product_tag">Sale</div>
-                    <div className="product-img">
-                      <div className="quick-product_btn">
+                    <div className="product_img">
+                      <div className="quick_product_btn">
                         <span>Quick View</span>
                       </div>
                     </div>
@@ -393,13 +388,13 @@ function Product() {
                       Fitting
                     </div>
                     <div className="product_price">
-                      <span className="visually-hidden">Regular Price</span>
-                      <span className="product_price--original">
+                      <span className="visually_price_hidden">Regular Price</span>
+                      <span className="original_price">
                         Rs. 2,499.00{" "}
                       </span>
                       <span className="visually-hidden">Sale price</span>Rs.
                       1,699.00
-                      <span className="product_price--savings">
+                      <span className="price_savings">
                         Save Rs. 800.00
                       </span>
                     </div>
@@ -410,11 +405,11 @@ function Product() {
               <Col xs={12} sm={6} md={3} className="p-0">
                 <div className="card">
                   <div className="new_arival">
-                    <img src={a2} className="arival_pic" alt="two" />
+                    <img src={a2} className="grow_pic" alt="two" />
 
                     <div className="product_tag">Sale</div>
-                    <div className="product-img">
-                      <div className="quick-product_btn">
+                    <div className="product_img">
+                      <div className="quick_product_btn">
                         <span>Quick View</span>
                       </div>
                     </div>
@@ -425,13 +420,13 @@ function Product() {
                       Fitting
                     </div>
                     <div className="product_price">
-                      <span className="visually-hidden">Regular Price</span>
-                      <span className="product_price--original">
+                      <span className="visually_price_hidden">Regular Price</span>
+                      <span className="original_price">
                         Rs. 2,499.00{" "}
                       </span>
                       <span className="visually-hidden">Sale price</span>Rs.
                       1,699.00
-                      <span className="product_price--savings">
+                      <span className="price_savings">
                         Save Rs. 800.00
                       </span>
                     </div>
@@ -442,11 +437,11 @@ function Product() {
               <Col xs={12} sm={6} md={3} className="p-0">
                 <div className="card">
                   <div className="new_arival">
-                    <img src={a3} className="arival_pic" alt="three" />
+                    <img src={a3} className="grow_pic" alt="three" />
 
                     <div className="product_tag">Sale</div>
-                    <div className="product-img">
-                      <div className="quick-product_btn">
+                    <div className="product_img">
+                      <div className="quick_product_btn">
                         <span>Quick View</span>
                       </div>
                     </div>
@@ -457,13 +452,13 @@ function Product() {
                       Fitting
                     </div>
                     <div className="product_price">
-                      <span className="visually-hidden">Regular Price</span>
-                      <span className="product_price--original">
+                      <span className="visually_price_hidden">Regular Price</span>
+                      <span className="original_price">
                         Rs. 2,499.00{" "}
                       </span>
                       <span className="visually-hidden">Sale price</span>Rs.
                       1,699.00
-                      <span className="product_price--savings">
+                      <span className="price_savings">
                         Save Rs. 800.00
                       </span>
                     </div>
@@ -474,11 +469,11 @@ function Product() {
               <Col xs={12} sm={6} md={3} className="p-0">
                 <div className="card">
                   <div className="new_arival">
-                    <img src={a4} className="arival_pic" alt="four" />
+                    <img src={a4} className="grow_pic" alt="four" />
 
                     <div className="product_tag">Sale</div>
-                    <div className="product-img">
-                      <div className="quick-product_btn">
+                    <div className="product_img">
+                      <div className="quick_product_btn">
                         <span>Quick View</span>
                       </div>
                     </div>
@@ -489,13 +484,13 @@ function Product() {
                       Fitting
                     </div>
                     <div className="product_price">
-                      <span className="visually-hidden">Regular Price</span>
-                      <span className="product_price--original">
+                      <span className="visually_price_hidden">Regular Price</span>
+                      <span className="original_price">
                         Rs. 2,499.00{" "}
                       </span>
                       <span className="visually-hidden">Sale price</span>Rs.
                       1,699.00
-                      <span className="product_price--savings">
+                      <span className="price_savings">
                         Save Rs. 800.00
                       </span>
                     </div>
