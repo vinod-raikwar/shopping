@@ -163,7 +163,7 @@ function Blog() {
             <Row>
               {/* *******COLUMN 8 BLOG START**********/}
 
-              <Col xs={12} md={8}>
+              <Col xs={12} md={7}>
                 <div className="blog-page-full">
                   <div
                     div
@@ -354,7 +354,7 @@ function Blog() {
 
               {/* **********COLUMN 4 SIDEBAR START********** */}
 
-              <Col xs={12} md={4}>
+              <Col xs={12} md={5}>
                 <div className="blog-page-sidebar">
                   <div className="side-search ss-box">
                     <h2>Search</h2>

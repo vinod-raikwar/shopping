@@ -30,7 +30,7 @@ function Footer() {
                       className="d-inline-block align-top logo_size"
                       alt="React Bootstrap logo"
                     /> */}
-                    <h3>Logo</h3>
+                    <h1>Logo</h1>
                   </Navbar.Brand>
                   <div className="mrt30">
                     <div className="footer_address">
@@ -81,7 +81,9 @@ function Footer() {
                         </Link>
                       </div>
                       <div className="media-body  ps-3">
-                        <h6 className="media-heading d-flex justify-content-start">John Doe </h6>
+                        <h6 className="media-heading d-flex justify-content-start">
+                          John Doe{" "}
+                        </h6>
                         <p className="footer_date">
                           <Link to="#/">
                             <i>Posted onFebruary 12, 2016 </i>
@@ -103,7 +105,9 @@ function Footer() {
                         </Link>
                       </div>
                       <div className="media-body ps-3">
-                        <h6 className="media-heading d-flex justify-content-start">John Doe </h6>
+                        <h6 className="media-heading d-flex justify-content-start">
+                          John Doe{" "}
+                        </h6>
                         <p className="footer_date">
                           <Link to="#/">
                             <i>Posted onFebruary 12, 2016 </i>
@@ -125,7 +129,9 @@ function Footer() {
                         </Link>
                       </div>
                       <div className="media-body ps-3">
-                        <h6 className="media-heading d-flex justify-content-start">John Doe </h6>
+                        <h6 className="media-heading d-flex justify-content-start">
+                          John Doe{" "}
+                        </h6>
                         <p className="footer_date">
                           <Link to="#/">
                             <i>Posted onFebruary 12, 2016 </i>
@@ -145,7 +151,7 @@ function Footer() {
                     <div className="map">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14718.03136813648!2d75.88608449999998!3d22.74652725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd584d617663%3A0x7ddfc9619bc0d038!2sIndore%2C%20Madhya%20Pradesh%20452011!5e0!3m2!1sen!2sin!4v1680612403324!5m2!1sen!2sin"
-                        width="290"
+                        width="100%"
                         height="230"
                         style={{ border: "1px solid silver" }}
                         allowfullscreen=""
@@ -204,15 +210,17 @@ function Footer() {
             <Row>
               <Col xs={12}>
                 <div className="footer_page_link mrt58 mrb30">
-                  <NavLink to="/">Home</NavLink>
-                  <NavLink to="/about">About Us</NavLink>
-                  <NavLink to="/product">Product</NavLink>
-                  <NavLink to="/services">Services</NavLink>
+                  <Nav>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/about">About Us</NavLink>
+                    <NavLink to="/product">Product</NavLink>
+                    <NavLink to="/services">Services</NavLink>
 
-                  <NavLink to="/blog">Blog</NavLink>
-                  <NavLink to="/contact">Contact Us</NavLink>
-                  <NavLink to="/policy">Privacy Policy</NavLink>
-                  <NavLink to="/condition">Terms & Condition</NavLink>
+                    <NavLink to="/blog">Blog</NavLink>
+                    <NavLink to="/contact">Contact Us</NavLink>
+                    <NavLink to="/policy">Privacy Policy</NavLink>
+                    <NavLink to="/condition">Terms & Condition</NavLink>
+                  </Nav>
                 </div>
               </Col>
             </Row>

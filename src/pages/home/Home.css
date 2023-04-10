@@ -45,6 +45,7 @@ p {
 a{
   text-decoration: none !important;
 }
+
 .form-control:focus{
   border-color: none !important;
   box-shadow: none !important; 
@@ -83,15 +84,14 @@ a{
   padding-bottom: 30px;
 }
 
-
-.pdtop50 {
+.pdt50 {
   padding-top: 50px;
 }
 .pdbottom50 {
   padding-bottom: 50px;
 }
 
-.main_heading>h2,h3,h6{
+.main_heading>h1,h3,h6{
   line-height: 1.5;
   text-transform: capitalize;
   margin: 0;
@@ -101,8 +101,12 @@ a{
 }
 .main_heading p{
   text-align: center;
-  
 }
+.main_heading span{
+  display: flex;
+  justify-content: center;
+}
+
 .img-fluid {
   width: 100%;
   height: auto;
@@ -214,9 +218,9 @@ a{
 
 /* **********Top Banner Css Start*********** */
 .banner_bg_img {
-  background: url(../../assets/images/contact-bg.jpg);
+  background: url(../../assets/images/cover-img.webp);
   width: 100%;
-  height: 50vh;
+  height: 300px;
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -224,7 +228,7 @@ a{
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 .breadcrumb {
   z-index: 99;
@@ -242,7 +246,7 @@ a{
 }
 
 .breadcrumb span:first-child a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 .breadcrumb span:first-child {
@@ -313,7 +317,9 @@ a{
   margin: 0px 10px 0px 12px;
   margin-top: 3px;
 }
-
+.social-icons{
+  justify-content: end;
+}
 /* ********Top_Header Css 
 End******** */
 
@@ -325,10 +331,10 @@ End******** */
 }
 
 .nav_anchor a {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #252525;
-  margin: 0px 12px;
+  margin: 0px 8px;
   text-decoration: none;
   position: relative;
   text-transform: uppercase;
@@ -680,7 +686,7 @@ End*********** */
   display: flex;
   text-decoration: none;
   color: #ffffff;
-  padding: 0px 0px 16px 0px;
+  margin: 0px 10px 0px 10px;
 }
 
 .footer_page_link a:hover {
@@ -694,7 +700,7 @@ End*********** */
 }
 
 .footer_bottom_left {
-  margin-left: 80px;
+  margin-left: 70px;
   color: #ffffff;
   text-align: start;
   padding-top: 14px;
@@ -709,7 +715,7 @@ End*********** */
 }
 
 .ftr_debit_cards img {
-  width: 50px;
+  width: 42px;
 }
 .media-heading {
   color: #ffffff;

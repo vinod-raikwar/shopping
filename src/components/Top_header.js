@@ -35,7 +35,7 @@ function Top_header() {
             </Col>
 
             <Col md={3}>
-              <div className="social-icons d-flex justify-content-end">
+              <div className="social-icons d-flex">
                 <Nav>
                   <Nav.Link href="#home">
                     <FaFacebookF />

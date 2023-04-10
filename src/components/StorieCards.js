@@ -23,7 +23,7 @@ function StorieCards() {
               <h3>Read Our Top Stories</h3>
             </div>
             <Row>
-              <Col md={4}>
+              <Col xs={12} sm={6} lg={4}>
                 <div>
                   <Card className="border-0 rounded-0 text-start">
                     <Card.Img variant="top" src={phone} />
@@ -48,7 +48,7 @@ function StorieCards() {
                   </Card>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col xs={12} sm={6} lg={4}>
                 <div >
                   <Card className="border-0 rounded-0 text-start">
                     <Card.Img variant="top" src={coffee_phone} />
@@ -76,7 +76,7 @@ function StorieCards() {
                   </Card>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col xs={12} sm={6} lg={4}>
                 <div>
                   <Card className="border-0 rounded-0 text-start">
                     <Card.Img variant="top" src={juice} />

@@ -68,15 +68,12 @@ function NavigationBar({ name, ...props }) {
                 <span onClick={search} className="search_icon">
                   <BsSearch/>
                 </span>
-              </Form>
-
-              <div className="nav_icons d-flex">
+                <div className="nav_icons d-flex">
                 <span onClick={handleShow}>
                   <BsHandbag />
                 </span>
               </div>
-
-              <div className="search_box"></div>
+              </Form>
 
               <Offcanvas
                 placement="end"

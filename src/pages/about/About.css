@@ -6,6 +6,7 @@
   background-color: #ffffff;
   padding: 30px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
 }
 .count_box .icon {
   display: block;
@@ -144,11 +145,12 @@
 
 /* ***********PROFILE SECTION CSS START*************** */
 .about-title h2 {
-  font-size: 44px;
+  font-size: 42px;
   line-height: 1.5;
   text-transform: uppercase;
   margin: 0;
   margin: 10px 0px;
+  color: #000000;
 }
 .value-aside h6 {
   justify-content: start;

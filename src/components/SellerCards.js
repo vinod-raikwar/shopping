@@ -25,7 +25,7 @@ function SellerCards() {
           </Row>
 
           <Row>
-            <Col xs={12} sm={6} md={3} className="p-0">
+            <Col xs={12} sm={6} lg={3} className="p-0">
               <div className="mrt30">
                 <Card className="card_size border-0 ">
                   <Link to="#shoe">
@@ -52,7 +52,7 @@ function SellerCards() {
               </div>
             </Col>
 
-            <Col xs={12} sm={6} md={3} className="p-0">
+            <Col xs={12} sm={6} lg={3} className="p-0">
               <div className="mrt30">
                 <Card className="card_size border-0">
                   <Link to="#bag">
@@ -79,7 +79,7 @@ function SellerCards() {
               </div>
             </Col>
 
-            <Col xs={12} sm={6} md={3} className="p-0">
+            <Col xs={12} sm={6} lg={3} className="p-0">
               <div className="mrt30">
                 <Card className="card_size border-0">
                   <Link to="#sweter">
@@ -105,7 +105,7 @@ function SellerCards() {
               </div>
             </Col>
 
-            <Col xs={12} sm={6} md={3} className="p-0">
+            <Col xs={12} sm={6} lg={3} className="p-0">
               <div className="mrt30">
                 <Card className="card_size border-0">
                   <Link to="#sneaker">

@@ -113,10 +113,10 @@ function About() {
         {/* ***********PROFILE SECTION END*************** */}
 
         {/* ***********COUNT SECTION START*************** */}
-        <div className="mrt58 ptb-30">
+        <div className="mrt58">
           <Container>
             <Row g={0}>
-              <Col xs={12} sm={6} md={3}>
+              <Col xs={12} sm={6} lg={3}>
                 <div className="count_box">
                   <span className="icon">
                     <BsEmojiSmile />
@@ -137,7 +137,7 @@ function About() {
                 </div>
               </Col>
 
-              <Col xs={12} sm={6} md={3}>
+              <Col xs={12} sm={6} lg={3}>
                 <div className="count_box">
                   <span className="icon">
                     <BsJournalRichtext />
@@ -157,7 +157,7 @@ function About() {
                 </div>
               </Col>
 
-              <Col xs={12} sm={6} md={3}>
+              <Col xs={12} sm={6} lg={3}>
                 <div className="count_box">
                   <span className="icon">
                     <BsHeadset />
@@ -178,7 +178,7 @@ function About() {
                 </div>
               </Col>
 
-              <Col xs={12} sm={6} md={3}>
+              <Col xs={12} sm={6} lg={3}>
                 <div className="count_box">
                   <span className="icon">
                     <HiOutlineUsers />
@@ -288,7 +288,7 @@ function About() {
         <div className="mrt58">
           <Container>
             <div className="main_heading ptb-30">
-              <h2>Our Team</h2>
+              <h3>Our Team</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
                 ut exercitationem amet possimus illo totam animi ab consequatur
